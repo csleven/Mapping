@@ -19,6 +19,11 @@ map(database="world", region = "Canada", xlim=c(-141,-53),
 #Open file with lat long data xs
 species <-read.csv("Cornus canadensis.csv", stringsAsFactors = FALSE, strip.white = TRUE, 
                    na.strings = c("NA",""),h = T, as.is = T)
+
+map(database="world", ylim=c(-60, 85), fill= TRUE, 
+    col="gray90")
+points(Ccan$decimalLongitude, Ccan$decimalLatitude, pch=19,
+       col="red", cex=0.3)
 ##This gives the worldwide distribution of Cornus canadensis!
 ##I feel like I probably need to run a loop for them all so I don't have to do them manually... 
 ##And probably start putting things into the DropBox as well
