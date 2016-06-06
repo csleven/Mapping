@@ -7,7 +7,10 @@ setwd("~/Desktop/Work with Amy/Mapping")
 library(maps)
 library(mapdata)
 library(maptools)
+library(ggplot2)
+
 install.packages("maptools")
+install.packages("ggplot2")
 
 ##Make a Simple Map
 canada.cities 
