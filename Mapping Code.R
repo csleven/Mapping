@@ -36,33 +36,30 @@ points(Ccan$decimalLongitude, Ccan$decimalLatitude, pch=19,
        col="red", cex=0.3)
 
 ##Convert .txt files to .csv
-setwd("~/Desktop/Work with Amy/Mapping/Distributions")
+setwd("~/Desktop/Work with Amy/Mapping/Distributions/")
 FILES <- list.files( pattern = ".txt")
 
 for (i in 1:length(FILES)) {
   FILE=read.table(file=FILES[i],header=TRUE, fill = TRUE)
-  write.csv(FILE,file=paste0("~/Desktop/Work with Amy/Mapping/Distributions",sub(".txt","",FILES[i]),".csv"))
+  write.csv(FILE,file=paste0("~/Desktop/Work with Amy/Mapping/",
+                             sub(".txt","",FILES[i]),".csv"))
 }
 
 ##Bring All Distribution Files Into R
-setwd("~/Desktop/Work with Amy/Mapping/Distributions")
-Abies.amabilis <- read.table("Abies.amabilis.txt",
-                 header = TRUE , fill = TRUE)
+path <- "~/Desktop/Work with Amy/Mapping/Distributions2/"
+files <- list.files(path=path, pattern="*.csv")
+for(file in files)
+{
+  perpos <- which(strsplit(file, "")[[1]]==".")
+  assign(
+    gsub(" ","",substr(file, 1, perpos-1)), 
+    read.csv(paste(path,file,sep="")))
+}
 
-
-##Turn year into numeric factor
-Abies.amabilis$year 
+##Check some data
+head(Abies_amabilis)
 
 ### Histograms of Distributions
-ggplot(data=Abies.amabilis, aes(xAbies.amabilis$year) + geom_histogram)
+qplot(Abies_amabilis$year, stat="count", geom="histogram")
 
-qplot(Abies.amabilis$year, geom="histogram")
-
-ggplot(data = Abies.amabilis,aes(x=year))+
-  geom_histogram()
-
-ggplot(Abies.amabilis, aes(x=year, fill = decimalLatitude)) +
-  geom_histogram(binwidth = 0.5) +
-  xlab("Year") +
-  ylab("Total count") +
-  labs(fill = "Coordinates")
+ggplot(data=Abies_amabilis, aes(Abies_amabilis$year)) + geom_histogram()
