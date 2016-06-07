@@ -1,0 +1,24 @@
+---
+title: "Mapping Progress"
+author: "Catriona"
+date: "June 7, 2016"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+First steps first, making sure required packages are all loaded up:
+```{r eval = FALSE}
+library(maps)
+# maps v3.1: updated 'world': all lakes moved to separate new #
+# 'lakes' database. Type '?world' or 'news(package="maps")'.  #
+library(mapdata)
+library(maptools)
+library(ggplot2)
+library(ggmap) 
+##Please cite ggmap if you use it: see citation('ggmap') for details.
+library(rmarkdown)
+```
+
+I then brought in all my .txt datafiles as separate dataframes:
+
