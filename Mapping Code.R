@@ -68,13 +68,14 @@ ggplot(data=Abies_amabilis, aes(Abies_amabilis$year)) + geom_histogram()
 setwd("~/Desktop/Work with Amy/Mapping/Distributions/")
 Abies_amabilis <-read.table("Abies_amabilis.txt", header = TRUE,   
                              sep = "\t", fill = TRUE, quote = "")
+## sep = "/t" and fill = TRUE seem to have gotten rid of my problem
+## of more columns than column headers
 
 is.numeric(Abies_amabilis$year)
 ##It is! 
 qplot(Abies_amabilis$year, geom="histogram", bins="10")
 ## This one plots and I can work out how to change bin width.
 ## Some of the years are definitely incorrect though...
-
 ggplot(data=Abies_amabilis, aes(Abies_amabilis$year)) + geom_histogram()
-##
+## This also works
 
