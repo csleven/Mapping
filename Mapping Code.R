@@ -57,9 +57,24 @@ for(file in files)
 }
 
 ##Check some data
-head(Abies_amabilis)
+
 
 ### Histograms of Distributions
 qplot(Abies_amabilis$year, stat="count", geom="histogram")
 
 ggplot(data=Abies_amabilis, aes(Abies_amabilis$year)) + geom_histogram()
+
+##Try with just Abies_amabilis .txt files
+setwd("~/Desktop/Work with Amy/Mapping/Distributions/")
+Abies_amabilis <-read.table("Abies_amabilis.txt", header = TRUE,   
+                             sep = "\t", fill = TRUE, quote = "")
+
+is.numeric(Abies_amabilis$year)
+##It is! 
+qplot(Abies_amabilis$year, geom="histogram", bins="10")
+## This one plots and I can work out how to change bin width.
+## Some of the years are definitely incorrect though...
+
+ggplot(data=Abies_amabilis, aes(Abies_amabilis$year)) + geom_histogram()
+##
+
