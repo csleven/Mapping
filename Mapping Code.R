@@ -35,6 +35,7 @@ map(database="world", ylim=c(24, 85), xlim=c(-180, -50), fill= TRUE,
 points(Ccan$decimalLongitude, Ccan$decimalLatitude, pch=19,
        col="red", cex=0.3)
 
+
 ##Convert .txt files to .csv
 setwd("~/Desktop/Work with Amy/Mapping/Distributions/")
 FILES <- list.files( pattern = ".txt")
@@ -56,7 +57,7 @@ for(file in files)
     read.csv(paste(path,file,sep="")))
 }
 
-##Check some data
+
 
 
 ### Histograms of Distributions
@@ -97,3 +98,17 @@ ggplot(data=Abies_amabilis,
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 
 ##...this is going to take a while by hand....
+
+##Abies amabilis map with distribution
+abieamab <- readShapePoly("abieamab.shp") 
+map(database="world", ylim=c(30, 60), xlim=c(-140, -100), fill= TRUE, 
+    col="gray90")
+plot(abieamab, add=TRUE, xlim=c(-140,-110),ylim=c(48,64), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Abies_amabilis$decimalLongitude, Abies_amabilis$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+##THIS WORKS! And I think probably has to be done by hand because distributions
+## vary so much that to scale in right is hard
+
+##Also this might only work for the trees
+ 
