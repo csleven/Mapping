@@ -76,6 +76,24 @@ is.numeric(Abies_amabilis$year)
 qplot(Abies_amabilis$year, geom="histogram", bins="10")
 ## This one plots and I can work out how to change bin width.
 ## Some of the years are definitely incorrect though...
-ggplot(data=Abies_amabilis, aes(Abies_amabilis$year)) + geom_histogram()
+ggplot(data=Abies_amabilis, 
+       aes(Abies_amabilis$year)) + geom_histogram(binwidth = 10)
 ## This also works
 
+##Try with Abies_lasiocarpa which is larger file
+Abies_lasiocarpa <-read.table("Abies_lasiocarpa.txt", header = TRUE,   
+                            sep = "\t", fill = TRUE, quote = "")
+is.numeric(Abies_lasiocarpa$year)
+ggplot(data=Abies_lasiocarpa, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+##okay, this also allows me to differentiate between ones with/without
+## coordinates. Though it does it based on what the latitude is, not
+## just whether or not there is a latitude
+
+##For Abies amabilis this looks like this:
+ggplot(data=Abies_amabilis, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+
+##...this is going to take a while by hand....
