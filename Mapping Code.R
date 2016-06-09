@@ -228,3 +228,57 @@ plot(cornstol, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
      col=alpha("darkgreen", 0.6), border=FALSE)
 points(Cornus_sericea.txt$decimalLongitude, Cornus_sericea.txt$decimalLatitude, pch=19,
        col="red", cex=0.3)
+
+#### Larix lyallii
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Larix_lyallii.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+larilyal <- readShapePoly("larilyal.shp") 
+map(database="world", ylim=c(45, 52), xlim=c(-130, -110), fill= TRUE, 
+    col="gray90")
+plot(larilyal, add=TRUE, xlim=c(-140,-120),ylim=c(10,55), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Larix_lyallii.txt$decimalLongitude, Larix_lyallii.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
+
+#### Picea engelmannii
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Picea_engelmannii.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+piceenge <- readShapePoly("piceenge.shp") 
+map(database="world", ylim=c(31, 58), xlim=c(-130, -100), fill= TRUE, 
+    col="gray90")
+plot(piceenge, add=TRUE, xlim=c(-140,-120),ylim=c(10,55), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Picea_engelmannii.txt$decimalLongitude, Picea_engelmannii.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
+
+#### Picea glauca
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Picea_glauca.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+piceglau <- readShapePoly("piceglau.shp") 
+map(database="world", ylim=c(31, 75), xlim=c(-180, -55), fill= TRUE, 
+    col="gray90")
+plot(piceenge, add=TRUE, xlim=c(-140,-120),ylim=c(10,55), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Picea_glauca.txt$decimalLongitude, Picea_glauca.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
