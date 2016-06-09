@@ -7,6 +7,7 @@ output: html_document
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
+### Loading Correct Packages
 First steps first, making sure required packages are all loaded up:
 ```{r eval = FALSE}
 library(maps)
@@ -20,5 +21,200 @@ library(ggmap)
 library(rmarkdown)
 ```
 
-I then brought in all my .txt datafiles as separate dataframes:
 
+### Importing Date Files
+I then brought in all my .txt datafiles as separate dataframes:
+```{r eval = FALSE}
+setwd("~/Desktop/Work with Amy/Mapping/Distributions/")
+path <- "~/Desktop/Work with Amy/Mapping/Distributions/"
+files <- list.files(path=path, pattern="*.txt")   
+for(i in files) {
+  x <- read.table(i, header = TRUE,   
+                  sep = "\t", fill = TRUE, quote = "")
+  assign(i,x)  
+}
+```
+
+I then wanted to:
+1. Create histograms demonstrating temporal spread of the data, and how many of the records already had latitude and longitude associated with them.
+  + This allows us to see what percentage of reords we lose if we do not geolocate those without coordinates.
+  + And how records are distributed over time, and if those with coordinates are disproportinately found in certain periods.
+2. Create maps showing the distribution of the herbarium records with latitude and longitude, and compare these with range maps of the species.
+  + This allows us to see if we have a decent coverage of the range of the species.
+  
+For tree and woody species, the USGS has range maps for North America with downloadable shape files that R can read and use. As these were easy to find, I started with these species.
+
+#### Abies amabilis
+###### Temporal Histogram
+``` {r eval = TRUE}
+ggplot(data=Abies_amabilis.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+
+###### Distribution Map
+```{r eval = TRUE}
+abieamab <- readShapePoly("abieamab.shp") ### These reads in the shape file for the range map
+map(database="world", ylim=c(30, 60), xlim=c(-140, -100), fill= TRUE, 
+    col="gray90")  ### These creates the base map layer; ylim and xlim determine how much of the world map is shown, and I changed these depending on individual species ranges
+plot(abieamab, add=TRUE, xlim=c(-140,-110),ylim=c(48,64), 
+     col=alpha("darkgreen", 0.6), border=FALSE) ###This plots the range map on the base map
+points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3) ###This plots the herbarium records with latitude and longitude on the map
+```
+
+#### Abies lasiocarpa
+##### Temporal Histogram
+```{r eval =TRUE}
+ggplot(data=Abies_lasiocarpa.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+
+##### Distribution Map
+```{r eval = TRUE}
+abielasi <- readShapePoly("abielasi.shp") 
+map(database="world", ylim=c(30, 70), xlim=c(-150, -100), fill= TRUE, 
+    col="gray90")
+plot(abielasi, add=TRUE, xlim=c(-140,-110),ylim=c(48,64), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```       
+
+#### Abies procera
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Abies_procera.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+abieproc <- readShapePoly("abieproc.shp") 
+map(database="world", ylim=c(30, 70), xlim=c(-140, -100), fill= TRUE, 
+    col="gray90")
+plot(abieproc, add=TRUE, xlim=c(-140,-110),ylim=c(-50,85), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
+
+#### Acer circinatum
+##### Temporal Histogram 
+```{r eval = TRUE}
+ggplot(data=Acer_circinatum.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+acercirc <- readShapePoly("acercirc.shp") 
+map(database="world", ylim=c(38, 52), xlim=c(-130, -118), fill= TRUE, 
+    col="gray90")
+plot(acercirc, add=TRUE, xlim=c(-140,-110),ylim=c(-50,85), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Acer_circinatum.txt$decimalLongitude, Acer_circinatum.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
+
+#### Alnus rubra
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Alnus_rubra.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+alnurubr <- readShapePoly("alnurubr.shp") 
+map(database="world", ylim=c(20, 60), xlim=c(-140, -115), fill= TRUE, 
+    col="gray90")
+plot(alnurubr, add=TRUE, xlim=c(-140,-120),ylim=c(20,60), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Alnus_rubra.txt$decimalLongitude, Alnus_rubra.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
+
+#### Amelanchier alnifolia
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Amelanchier_alnifolia.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+amelalni <- readShapePoly("amelalni.shp") 
+map(database="world", ylim=c(33, 85), xlim=c(-160, -70), fill= TRUE, 
+    col="gray90")
+plot(amelalni, add=TRUE, xlim=c(-140,-120),ylim=c(20,60), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Amelanchier_alnifolia.txt$decimalLongitude, Amelanchier_alnifolia.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
+
+#### Chamaecyparis nootkaensis
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Chamaecyparis_nootkatensis.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+chamnoot <- readShapePoly("chamnoot.shp") 
+map(database="world", ylim=c(38, 61), xlim=c(-150, -104), fill= TRUE, 
+    col="gray90")
+plot(chamnoot, add=TRUE, xlim=c(-140,-120),ylim=c(20,60), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Chamaecyparis_nootkatensis.txt$decimalLongitude, Chamaecyparis_nootkatensis.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
+
+#### Cornus nuttallii
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Cornus_nuttallii.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+cornnutt <- readShapePoly("cornnutt.shp") 
+map(database="world", ylim=c(33, 53), xlim=c(-130, -112), fill= TRUE, 
+    col="gray90")
+plot(cornnutt, add=TRUE, xlim=c(-140,-120),ylim=c(10,55), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Cornus_nuttallii.txt$decimalLongitude, Cornus_nuttallii.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
+
+#### Cornus sericea
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Cornus_sericea.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+##### Distribution Map
+```{r eval = TRUE}
+cornstol <- readShapePoly("cornstol.shp") 
+map(database="world", ylim=c(33, 70), xlim=c(-160, -50), fill= TRUE, 
+    col="gray90")
+plot(cornstol, add=TRUE, xlim=c(-140,-120),ylim=c(10,55), 
+     col=alpha("darkgreen", 0.6), border=FALSE)
+points(Cornus_sericea.txt$decimalLongitude, Cornus_sericea.txt$decimalLatitude, pch=19,
+       col="red", cex=0.3)
+```
+
+
+
+### Files Used
+All of the files I have used for distributions etc. can be found [here][https://github.com/csleven/Mapping]
+
+### Resources Used
+- [Kimberly Gilbert's 'Making Maps With R' tutorial][http://www.molecularecologist.com/2012/09/making-maps-with-r/] 
+- [USGS Tree Ranges][http://esp.cr.usgs.gov/data/little/]
+- [R Studio Markdown Intro][http://rmarkdown.rstudio.com/authoring_quick_tour.html] and [R Studio Markdown Cheat Sheet][https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf]
+- 
