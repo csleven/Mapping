@@ -14,6 +14,7 @@ library(ggmap)
 ##Please cite ggmap if you use it: see citation('ggmap') for details.
 library(rmarkdown)
 library(knitr)
+library(reshape)
 
 
 install.packages("maptools")
@@ -21,6 +22,7 @@ install.packages("ggplot2")
 install.packages("ggmap")
 devtools::install_github("rstudio/rmarkdown")
 install.packages("knitr")
+install.packages("reshape")
 
 ##Make a Simple Map
 canada.cities 
@@ -85,7 +87,7 @@ Abies_amabilis <-read.table("Abies_amabilis.txt", header = TRUE,
 
 is.numeric(Abies_amabilis$year)
 ##It is! 
-qplot(Abies_amabilis$year, geom="histogram", bins="10")
+qplot(Abies_amabilis.txt$year, geom="histogram", binwidth="10")
 ## This one plots and I can work out how to change bin width.
 ## Some of the years are definitely incorrect though...
 ggplot(data=Abies_amabilis.txt, 

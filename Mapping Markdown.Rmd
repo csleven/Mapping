@@ -7,7 +7,14 @@ output: html_document
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-### Loading Correct Packages
+### Goals:
+ 1. Create histograms demonstrating temporal spread of the data, and how many of the records already had latitude and longitude associated with them.
+  + This allows us to see what percentage of reords we lose if we do not geolocate those without coordinates.
+  + And how records are distributed over time, and if those with coordinates are disproportinately found in certain periods.
+ 2. Create maps showing the distribution of the herbarium records with latitude and longitude, and compare these with range maps of the species.
+  + This allows us to see if we have a decent coverage of the range of the species.
+
+#### Loading Correct Packages
 First steps first, making sure required packages are all loaded up:
 ```{r eval = FALSE}
 library(maps)
@@ -22,8 +29,7 @@ library(rmarkdown)
 library(knitr)
 ```
 
-
-### Importing Date Files
+#### Importing Data Files
 I then brought in all my .txt datafiles as separate dataframes:
 ```{r eval = FALSE}
 setwd("~/Desktop/Work with Amy/Mapping/Distributions/")
@@ -36,23 +42,16 @@ for(i in files) {
 }
 ```
 
-I then wanted to:
- 1. Create histograms demonstrating temporal spread of the data, and how many of the records already had latitude and longitude associated with them.
-  + This allows us to see what percentage of reords we lose if we do not geolocate those without coordinates.
-  + And how records are distributed over time, and if those with coordinates are disproportinately found in certain periods.
- 2. Create maps showing the distribution of the herbarium records with latitude and longitude, and compare these with range maps of the species.
-  + This allows us to see if we have a decent coverage of the range of the species.
-  
+#### Making Plots
 For tree and woody species, the USGS has range maps for North America with downloadable shape files that R can read and use. As these were easy to find, I started with these species.
 
 #### Abies amabilis
 ###### Temporal Histogram
-```{r ggplot eval = TRUE, echo=TRUE}
+```{r eval = TRUE, echo=TRUE}
 ggplot(data=Abies_amabilis.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-
 ###### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 abieamab <- readShapePoly("abieamab.shp") ### These reads in the shape file for the range map
@@ -66,12 +65,11 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
 
 #### Abies lasiocarpa
 ##### Temporal Histogram
-```{r ggplot eval = TRUE, echo=TRUE}
+```{r eval = TRUE, echo=TRUE}
 ggplot(data=Abies_lasiocarpa.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 abielasi <- readShapePoly("abielasi.shp") 
@@ -86,7 +84,7 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
 #### Abies procera
 ##### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}
-qplot(data=Abies_procera.txt, 
+ggplot(data=Abies_procera.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -104,7 +102,7 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
 #### Acer circinatum
 ##### Temporal Histogram 
 ```{r eval = TRUE, echo=TRUE}
-qplot(data=Acer_circinatum.txt, 
+ggplot(data=Acer_circinatum.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
