@@ -36,10 +36,10 @@ for(i in files) {
 ```
 
 I then wanted to:
-1. Create histograms demonstrating temporal spread of the data, and how many of the records already had latitude and longitude associated with them.
+ 1. Create histograms demonstrating temporal spread of the data, and how many of the records already had latitude and longitude associated with them.
   + This allows us to see what percentage of reords we lose if we do not geolocate those without coordinates.
   + And how records are distributed over time, and if those with coordinates are disproportinately found in certain periods.
-2. Create maps showing the distribution of the herbarium records with latitude and longitude, and compare these with range maps of the species.
+ 2. Create maps showing the distribution of the herbarium records with latitude and longitude, and compare these with range maps of the species.
   + This allows us to see if we have a decent coverage of the range of the species.
   
 For tree and woody species, the USGS has range maps for North America with downloadable shape files that R can read and use. As these were easy to find, I started with these species.
