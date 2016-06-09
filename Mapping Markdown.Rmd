@@ -51,9 +51,11 @@ For some reason that I can't work out, when I try to make R 'knit HTML' this, it
 ###### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}
 library(ggplot2)
+print(p)
 ggplot(data=Abies_amabilis.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+print(p)
 ```
 ###### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
