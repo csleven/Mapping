@@ -56,6 +56,7 @@ ggplot(data=Abies_amabilis.txt,
 
 ```
  ![abiesamhistogram](https://github.com/csleven/Mapping/blob/8d8270d77a46abc59bb3a908031831fff0002b52/Distributions/AbiesamHist.png?raw=true)
+ 
 ###### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 abieamab <- readShapePoly("abieamab.shp") ### These reads in the shape file for the range map
@@ -66,7 +67,7 @@ plot(abieamab, add=TRUE, xlim=c(-140,-110),ylim=c(48,64),
 points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, pch=19,
        col="red", cex=0.3) ###This plots the herbarium records with latitude and longitude on the map
 ```
-
+![abiesammap](https://github.com/csleven/Mapping/blob/a5ddbd32a823bc23c4f4e488a76f68f391ff5a36/Distributions/abiesamMap.png?raw=true)
 ```{r eval = TRUE, echo=TRUE}
 plot(
 ggplot(data=Abies_amabilis.txt, 
