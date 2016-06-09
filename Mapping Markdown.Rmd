@@ -211,10 +211,9 @@ points(Cornus_sericea.txt$decimalLongitude, Cornus_sericea.txt$decimalLatitude, 
 
 
 ### Files Used
-All of the files I have used for distributions etc. can be found [here][https://github.com/csleven/Mapping]
+All of the files I have used for distributions etc. can be found [here](https://github.com/csleven/Mapping)
 
 ### Resources Used
-- [Kimberly Gilbert's 'Making Maps With R' tutorial] [http://www.molecularecologist.com/2012/09/making-maps-with-r/] 
-- [USGS Tree Ranges] [http://esp.cr.usgs.gov/data/little/]
-- - [R Studio Markdown Intro] [http://rmarkdown.rstudio.com/authoring_quick_tour.html] and [R Studio Markdown Cheat Sheet] [https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf]
-- 
+- [Kimberly Gilbert's 'Making Maps With R' tutorial](http://www.molecularecologist.com/2012/09/making-maps-with-r/)
+- [USGS Tree Ranges](http://esp.cr.usgs.gov/data/little/)
+- [R Studio Markdown Intro](http://rmarkdown.rstudio.com/authoring_quick_tour.html) and [R Studio Markdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)

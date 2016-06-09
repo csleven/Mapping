@@ -13,12 +13,14 @@ library(ggplot2)
 library(ggmap) 
 ##Please cite ggmap if you use it: see citation('ggmap') for details.
 library(rmarkdown)
+library(knitr)
 
 
 install.packages("maptools")
 install.packages("ggplot2")
 install.packages("ggmap")
 devtools::install_github("rstudio/rmarkdown")
+install.packages("knitr")
 
 ##Make a Simple Map
 canada.cities 
