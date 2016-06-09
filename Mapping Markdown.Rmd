@@ -55,7 +55,7 @@ ggplot(data=Abies_amabilis.txt,
            fill = decimalLatitude)) + geom_histogram(binwidth = 10))
 
 ```
- ![abiesamhistogram](/Users/Catriona/Desktop/Work with Amy/Mapping/Distributions)
+ ![abiesamhistogram](https://github.com/csleven/Mapping/blob/8d8270d77a46abc59bb3a908031831fff0002b52/Distributions/AbiesamHist.png?raw=true)
 ###### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 abieamab <- readShapePoly("abieamab.shp") ### These reads in the shape file for the range map
