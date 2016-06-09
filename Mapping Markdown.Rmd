@@ -19,6 +19,7 @@ library(ggplot2)
 library(ggmap) 
 ##Please cite ggmap if you use it: see citation('ggmap') for details.
 library(rmarkdown)
+library(knitr)
 ```
 
 
@@ -46,7 +47,7 @@ For tree and woody species, the USGS has range maps for North America with downl
 
 #### Abies amabilis
 ###### Temporal Histogram
-```{r eval = TRUE, echo=TRUE}
+```{r ggplot eval = TRUE, echo=TRUE}
 ggplot(data=Abies_amabilis.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
@@ -217,3 +218,4 @@ All of the files I have used for distributions etc. can be found [here](https://
 - [Kimberly Gilbert's 'Making Maps With R' tutorial](http://www.molecularecologist.com/2012/09/making-maps-with-r/)
 - [USGS Tree Ranges](http://esp.cr.usgs.gov/data/little/)
 - [R Studio Markdown Intro](http://rmarkdown.rstudio.com/authoring_quick_tour.html) and [R Studio Markdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- A collection of links about histograms: [here](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/hist.html), [here]()
