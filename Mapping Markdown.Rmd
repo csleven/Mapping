@@ -66,7 +66,7 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
 
 #### Abies lasiocarpa
 ##### Temporal Histogram
-```{r eval = TRUE, echo=TRUE}
+```{r ggplot eval = TRUE, echo=TRUE}
 ggplot(data=Abies_lasiocarpa.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
@@ -85,7 +85,7 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
 
 #### Abies procera
 ##### Temporal Histogram
-```{r eval = TRUE, echo=TRUE}
+```{r ggplot eval = TRUE, echo=TRUE}
 ggplot(data=Abies_procera.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
@@ -103,7 +103,7 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
 
 #### Acer circinatum
 ##### Temporal Histogram 
-```{r eval = TRUE, echo=TRUE}
+```{r ggplot eval = TRUE, echo=TRUE}
 ggplot(data=Acer_circinatum.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
