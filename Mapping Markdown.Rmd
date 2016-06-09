@@ -231,6 +231,7 @@ points(Larix_lyallii.txt$decimalLongitude, Larix_lyallii.txt$decimalLatitude, pc
 #### Picea engelmannii
 ##### Temporal Histogram
 ```{r eval = TRUE}
+print(p)
 ggplot(data=Picea_engelmannii.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
@@ -252,6 +253,7 @@ points(Picea_engelmannii.txt$decimalLongitude, Picea_engelmannii.txt$decimalLati
 ggplot(data=Picea_glauca.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+print(p)
 ```
 ##### Distribution Map
 ```{r eval = TRUE}
