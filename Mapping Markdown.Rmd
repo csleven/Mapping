@@ -46,14 +46,14 @@ For tree and woody species, the USGS has range maps for North America with downl
 
 #### Abies amabilis
 ###### Temporal Histogram
-``` {r}
+```{r eval = TRUE, echo=TRUE}
 ggplot(data=Abies_amabilis.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
 
 ###### Distribution Map
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 abieamab <- readShapePoly("abieamab.shp") ### These reads in the shape file for the range map
 map(database="world", ylim=c(30, 60), xlim=c(-140, -100), fill= TRUE, 
     col="gray90")  ### These creates the base map layer; ylim and xlim determine how much of the world map is shown, and I changed these depending on individual species ranges
@@ -65,14 +65,14 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
 
 #### Abies lasiocarpa
 ##### Temporal Histogram
-```{r eval =TRUE}
+```{r eval = TRUE, echo=TRUE}
 ggplot(data=Abies_lasiocarpa.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
 
 ##### Distribution Map
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 abielasi <- readShapePoly("abielasi.shp") 
 map(database="world", ylim=c(30, 70), xlim=c(-150, -100), fill= TRUE, 
     col="gray90")
@@ -84,13 +84,13 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
 
 #### Abies procera
 ##### Temporal Histogram
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 ggplot(data=Abies_procera.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
 ##### Distribution Map
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 abieproc <- readShapePoly("abieproc.shp") 
 map(database="world", ylim=c(30, 70), xlim=c(-140, -100), fill= TRUE, 
     col="gray90")
@@ -102,13 +102,13 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
 
 #### Acer circinatum
 ##### Temporal Histogram 
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 ggplot(data=Acer_circinatum.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
 ##### Distribution Map
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 acercirc <- readShapePoly("acercirc.shp") 
 map(database="world", ylim=c(38, 52), xlim=c(-130, -118), fill= TRUE, 
     col="gray90")
@@ -120,13 +120,13 @@ points(Acer_circinatum.txt$decimalLongitude, Acer_circinatum.txt$decimalLatitude
 
 #### Alnus rubra
 ##### Temporal Histogram
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 ggplot(data=Alnus_rubra.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
 ##### Distribution Map
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 alnurubr <- readShapePoly("alnurubr.shp") 
 map(database="world", ylim=c(20, 60), xlim=c(-140, -115), fill= TRUE, 
     col="gray90")
@@ -138,13 +138,13 @@ points(Alnus_rubra.txt$decimalLongitude, Alnus_rubra.txt$decimalLatitude, pch=19
 
 #### Amelanchier alnifolia
 ##### Temporal Histogram
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 ggplot(data=Amelanchier_alnifolia.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
 ##### Distribution Map
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 amelalni <- readShapePoly("amelalni.shp") 
 map(database="world", ylim=c(33, 85), xlim=c(-160, -70), fill= TRUE, 
     col="gray90")
@@ -156,13 +156,13 @@ points(Amelanchier_alnifolia.txt$decimalLongitude, Amelanchier_alnifolia.txt$dec
 
 #### Chamaecyparis nootkaensis
 ##### Temporal Histogram
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 ggplot(data=Chamaecyparis_nootkatensis.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
 ##### Distribution Map
-```{r eval = TRUE}
+```{r eval = TRUE, echo=TRUE}
 chamnoot <- readShapePoly("chamnoot.shp") 
 map(database="world", ylim=c(38, 61), xlim=c(-150, -104), fill= TRUE, 
     col="gray90")
