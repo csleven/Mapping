@@ -48,6 +48,7 @@ For tree and woody species, the USGS has range maps for North America with downl
 #### Abies amabilis
 ###### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}
+library(ggplot2)
 ggplot(data=Abies_amabilis.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
