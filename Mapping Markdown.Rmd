@@ -45,18 +45,17 @@ for(i in files) {
 #### Making Plots
 For tree and woody species, the USGS has range maps for North America with downloadable shape files that R can read and use. As these were easy to find, I started with these species.
 
-For some reason that I can't work out, when I try to make R 'knit HTML' this, it says that 'ggplot' cannot be found, and so doesn't display the plots, though the code does actually work in R...
 
 #### Abies amabilis
 ###### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}
-library(ggplot2)
-print(p)
+plot(
 ggplot(data=Abies_amabilis.txt, 
        aes(x = year, group = decimalLatitude, 
-           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
-print(p)
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10))
+
 ```
+ ![](/Users/Catriona/Desktop/Work with Amy/Mapping/Distributions)
 ###### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 abieamab <- readShapePoly("abieamab.shp") ### These reads in the shape file for the range map
@@ -68,6 +67,13 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
        col="red", cex=0.3) ###This plots the herbarium records with latitude and longitude on the map
 ```
 
+```{r eval = TRUE, echo=TRUE}
+plot(
+ggplot(data=Abies_amabilis.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10))
+
+```
 #### Abies lasiocarpa
 ##### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}

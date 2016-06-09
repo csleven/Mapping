@@ -110,7 +110,10 @@ ggplot(data=Abies_amabilis.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 
-##...this is going to take a while by hand....
+hist(Abies_amabilis.txt$year[Abies_amabilis.txt$decimalLatitude<0])
+
+hist(Abies_amabilis.txt$year[Abies_amabilis.txt$decimalLatitude == "<0"])
+hist(Abies_amabilis.txt$year[Abies_amabilis.txt$decimalLatitude== ""])
 
 ##Abies amabilis map with distribution
 abieamab <- readShapePoly("abieamab.shp") 
