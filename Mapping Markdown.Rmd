@@ -75,7 +75,7 @@ ggplot(data=Abies_lasiocarpa.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![abieslasHist](Mapping/Distributions/AbieslasHist.png)
+![abieslasHist](https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 abielasi <- readShapePoly("abielasi.shp") 
@@ -95,7 +95,7 @@ ggplot(data=Abies_procera.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![abiesprocHist]()
+![abiesprocHist](https://github.com/csleven/Mapping/blob/master/Distributions/AbiesprocHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 abieproc <- readShapePoly("abieproc.shp") 
@@ -107,6 +107,7 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
        col="red", cex=0.3)
 ```
 ![abiesprocMap]()
+
 #### Acer circinatum
 ##### Temporal Histogram 
 ```{r eval = TRUE, echo=TRUE}
@@ -114,7 +115,7 @@ ggplot(data=Acer_circinatum.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![acercircHist]()
+![acercircHist](https://github.com/csleven/Mapping/blob/master/Distributions/AcercircHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 acercirc <- readShapePoly("acercirc.shp") 
@@ -133,7 +134,7 @@ ggplot(data=Alnus_rubra.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/AlnrubHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 alnurubr <- readShapePoly("alnurubr.shp") 
@@ -153,7 +154,7 @@ ggplot(data=Amelanchier_alnifolia.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/AmealniHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 amelalni <- readShapePoly("amelalni.shp") 
