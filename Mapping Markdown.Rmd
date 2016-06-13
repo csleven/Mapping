@@ -89,9 +89,8 @@ plot(abielasi, add=TRUE, xlim=c(-140,-110),ylim=c(48,64),
 points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```       
-![abieslasMap](https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocarpaBonap.png?raw=true" alt="bonap" width="350"/>
-
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocorpaEflora.png?raw=true" alt="eflora" width="350"/>
 
 
