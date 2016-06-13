@@ -259,7 +259,7 @@ ggplot(data=Calamagrostis_rubescens.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/CalmagHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(32, 60), xlim=c(-130, -108), fill= TRUE, 
@@ -267,7 +267,7 @@ map(database="world", ylim=c(32, 60), xlim=c(-130, -108), fill= TRUE,
 points(Calamagrostis_rubescens.txt$decimalLongitude, Calamagrostis_rubescens.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/CalmagMap.png?raw=true)
 
 #### Cassiope mertensiana
 ##### Histogram
@@ -276,7 +276,7 @@ ggplot(data=Cassiope_mertensiana.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/CasmerHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(36, 61), xlim=c(-150, -109), fill= TRUE, 
@@ -284,7 +284,7 @@ map(database="world", ylim=c(36, 61), xlim=c(-150, -109), fill= TRUE,
 points(Cassiope_mertensiana.txt$decimalLongitude, Cassiope_mertensiana.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/CasmerMap.png?raw=true)
 
 #### Ceanothus velutinus
 ##### Histogram
@@ -293,7 +293,7 @@ ggplot(data=Ceanothus_velutinus.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/CeanvelHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(32, 56), xlim=c(-150, -100), fill= TRUE, 
@@ -301,7 +301,7 @@ map(database="world", ylim=c(32, 56), xlim=c(-150, -100), fill= TRUE,
 points(Ceanothus_velutinus.txt$decimalLongitude, Ceanothus_velutinus.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/CeanvelMap.png?raw=true)
 
 #### Chamaecyparis nootkaensis
 ##### Temporal Histogram
@@ -331,7 +331,7 @@ ggplot(data=Chimaphila_umbellata.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/ChimumbHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(32, 60), xlim=c(-140, -50), fill= TRUE, 
@@ -339,7 +339,7 @@ map(database="world", ylim=c(32, 60), xlim=c(-140, -50), fill= TRUE,
 points(Chimaphila_umbellata.txt$decimalLongitude, Chimaphila_umbellata.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/ChimumbMap.png?raw=true)
 
 #### Clintonia uniflora
 ##### Histogram
@@ -348,7 +348,7 @@ ggplot(data=Clintonia_uniflora.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/ClinuniHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(35, 59), xlim=c(-140, -110), fill= TRUE, 
@@ -356,7 +356,7 @@ map(database="world", ylim=c(35, 59), xlim=c(-140, -110), fill= TRUE,
 points(Clintonia_uniflora.txt$decimalLongitude, Clintonia_uniflora.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/ClinuniMap.png?raw=true)
 
 #### Cornus nuttallii
 ##### Temporal Histogram
@@ -405,7 +405,7 @@ ggplot(data=Epilobium_angustifolium.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/EpiangHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(30, 70), xlim=c(-170, -50), fill= TRUE, 
@@ -413,7 +413,7 @@ map(database="world", ylim=c(30, 70), xlim=c(-170, -50), fill= TRUE,
 points(Epilobium_angustifolium.txt$decimalLongitude, Epilobium_angustifolium.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/EpiangMap.png?raw=true)
 
 #### Gaultheria ovatifolia
 ##### Histogram
@@ -422,7 +422,7 @@ ggplot(data=Gaultheria_ovatifolia.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/GaulovHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(38, 64), xlim=c(-136, -95), fill= TRUE, 
@@ -430,7 +430,7 @@ map(database="world", ylim=c(38, 64), xlim=c(-136, -95), fill= TRUE,
 points(Gaultheria_ovatifolia.txt$decimalLongitude, Gaultheria_ovatifolia.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/GaulovaMap.png?raw=true)
 
 #### Goodyera oblongifolia
 ##### Histogram
@@ -439,7 +439,7 @@ ggplot(data=Goodyera_oblongifolia.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/GoodobHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(32, 64), xlim=c(-141, -60), fill= TRUE, 
@@ -447,7 +447,7 @@ map(database="world", ylim=c(32, 64), xlim=c(-141, -60), fill= TRUE,
 points(Goodyera_oblongifolia.txt$decimalLongitude, Goodyera_oblongifolia.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/GoodobMap.png?raw=true)
 
 #### Gymnocarpium dryopteris
 ##### Histogram
@@ -456,7 +456,7 @@ ggplot(data=Gymnocarpium_dryopteris.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/GymdryHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(32, 70), xlim=c(-170, -50), fill= TRUE, 
@@ -464,7 +464,7 @@ map(database="world", ylim=c(32, 70), xlim=c(-170, -50), fill= TRUE,
 points(Gymnocarpium_dryopteris.txt$decimalLongitude, Gymnocarpium_dryopteris.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/GymdryMap.png?raw=true)
 
 #### Hieracium albiflorum
 ##### Histogram
@@ -473,7 +473,7 @@ ggplot(data=Hieracium_albiflorum.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/HiealbHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(32, 63), xlim=c(-140, -50), fill= TRUE, 
@@ -481,7 +481,7 @@ map(database="world", ylim=c(32, 63), xlim=c(-140, -50), fill= TRUE,
 points(Hieracium_albiflorum.txt$decimalLongitude, Hieracium_albiflorum.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/HiealbMap.png?raw=true)
 
 #### Larix lyallii
 ##### Temporal Histogram
