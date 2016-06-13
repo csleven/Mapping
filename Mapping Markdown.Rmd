@@ -86,7 +86,7 @@ plot(abielasi, add=TRUE, xlim=c(-140,-110),ylim=c(48,64),
 points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```       
-![abieslasMap](Mapping/Distributions/AbieslasMap.pdf)
+![abieslasMap](https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true)
 
 #### Abies procera
 ##### Temporal Histogram
@@ -106,7 +106,7 @@ plot(abieproc, add=TRUE, xlim=c(-130,-110),ylim=c(-50,85),
 points(Abies_procera.txt$decimalLongitude, Abies_procera.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![abiesprocMap]()
+![abiesprocMap](https://github.com/csleven/Mapping/blob/master/Distributions/AbiesprocMap.png?raw=true)
 
 #### Acer circinatum
 ##### Temporal Histogram 
@@ -126,7 +126,58 @@ plot(acercirc, add=TRUE, xlim=c(-140,-110),ylim=c(-50,85),
 points(Acer_circinatum.txt$decimalLongitude, Acer_circinatum.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/AcercircMap.png?raw=true)
+
+#### Acer glabrum
+##### Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Acer_glabrum.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(30, 61), xlim=c(-140, -100), fill= TRUE, 
+    col="gray90")
+points(Acer_glabrum.txt$decimalLongitude, Acer_glabrum.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
 ![map]()
+#### Acer macrophyllum
+##### Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Acer_macrophyllum.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(32, 52), xlim=c(-130, -110), fill= TRUE, 
+    col="gray90")
+points(Acer_macrophyllum.txt$decimalLongitude, Acer_macrophyllum.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+![map]()
+
+#### Achillea millefolium
+##### Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Achillea_millefolium.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(32, 52), xlim=c(-130, -110), fill= TRUE, 
+    col="gray90")
+points(Achillea_millefolium.txt$decimalLongitude, Achillea_millefolium.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+![map]()
+
 #### Alnus rubra
 ##### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}
@@ -145,7 +196,7 @@ plot(alnurubr, add=TRUE, xlim=c(-140,-120),ylim=c(20,60),
 points(Alnus_rubra.txt$decimalLongitude, Alnus_rubra.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubMap.png?raw=true)
 
 #### Amelanchier alnifolia
 ##### Temporal Histogram
@@ -165,7 +216,7 @@ plot(amelalni, add=TRUE, xlim=c(-140,-120),ylim=c(20,60),
 points(Amelanchier_alnifolia.txt$decimalLongitude, Amelanchier_alnifolia.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/AmealniMap.png?raw=true)
 
 #### Chamaecyparis nootkaensis
 ##### Temporal Histogram
@@ -174,7 +225,7 @@ ggplot(data=Chamaecyparis_nootkatensis.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![Hist]()
+![Hist](https://github.com/csleven/Mapping/blob/master/Distributions/ChamnootHist.png?raw=true)
 
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
@@ -186,7 +237,7 @@ plot(chamnoot, add=TRUE, xlim=c(-140,-120),ylim=c(20,60),
 points(Chamaecyparis_nootkatensis.txt$decimalLongitude, Chamaecyparis_nootkatensis.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![Map]()
+![Map](https://github.com/csleven/Mapping/blob/master/Distributions/ChamnootMap.png?raw=true)
 
 #### Cornus nuttallii
 ##### Temporal Histogram
@@ -195,7 +246,7 @@ ggplot(data=Cornus_nuttallii.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![Hist]()
+![Hist](https://github.com/csleven/Mapping/blob/master/Distributions/CornsercHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 cornnutt <- readShapePoly("cornnutt.shp") 
@@ -206,7 +257,7 @@ plot(cornnutt, add=TRUE, xlim=c(-130,-120),ylim=c(10,55),
 points(Cornus_nuttallii.txt$decimalLongitude, Cornus_nuttallii.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![Map]()
+![Map](https://github.com/csleven/Mapping/blob/master/Distributions/CornutMap.png?raw=true)
 
 #### Cornus sericea
 ##### Temporal Histogram
@@ -215,7 +266,7 @@ ggplot(data=Cornus_sericea.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![Hist]()
+![Hist](https://github.com/csleven/Mapping/blob/master/Distributions/CornsercHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 cornstol <- readShapePoly("cornstol.shp") 
@@ -226,7 +277,7 @@ plot(cornstol, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Cornus_sericea.txt$decimalLongitude, Cornus_sericea.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![Map]()
+![Map](https://github.com/csleven/Mapping/blob/master/Distributions/CornstolMap.png?raw=true)
 
 #### Larix lyallii
 ##### Temporal Histogram
@@ -235,7 +286,7 @@ ggplot(data=Larix_lyallii.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![Hist]()
+![Hist](https://github.com/csleven/Mapping/blob/master/Distributions/LarilyalHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 larilyal <- readShapePoly("larilyal.shp") 
@@ -246,7 +297,7 @@ plot(larilyal, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Larix_lyallii.txt$decimalLongitude, Larix_lyallii.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![Map]()
+![Map](https://github.com/csleven/Mapping/blob/master/Distributions/LarilyalMap.png?raw=true)
 
 #### Picea engelmannii
 ##### Temporal Histogram
@@ -255,7 +306,7 @@ ggplot(data=Picea_engelmannii.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![Hist]()
+![Hist](https://github.com/csleven/Mapping/blob/master/Distributions/PicengHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 piceenge <- readShapePoly("piceenge.shp") 
@@ -266,7 +317,7 @@ plot(piceenge, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Picea_engelmannii.txt$decimalLongitude, Picea_engelmannii.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![Map]()
+![Map](https://github.com/csleven/Mapping/blob/master/Distributions/PicengMap.png?raw=true)
 #### Picea glauca
 ##### Temporal Histogram
 ```{r eval = TRUE}
@@ -274,7 +325,7 @@ ggplot(data=Picea_glauca.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/PiceglauHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 piceglau <- readShapePoly("piceglau.shp") 
@@ -285,7 +336,7 @@ plot(piceglau, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Picea_glauca.txt$decimalLongitude, Picea_glauca.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map]()
+![map](https://github.com/csleven/Mapping/blob/master/Distributions/PiceglauMap.png?raw=true)
 
 ### Files Used
 All of the files I have used for distributions etc. can be found [here](https://github.com/csleven/Mapping)
