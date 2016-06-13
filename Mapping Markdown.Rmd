@@ -69,7 +69,7 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
 ![abiesammap](https://github.com/csleven/Mapping/blob/a5ddbd32a823bc23c4f4e488a76f68f391ff5a36/Distributions/abiesamMap.png?raw=true)
 ![bonapmap](https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisBonap.png?raw=true)
 
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisBonap.png?raw=true" alt="bonap" width="300"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisBonap.png?raw=true" alt="bonap" width="400"/>
 
 #### Abies lasiocarpa
 ##### Temporal Histogram
