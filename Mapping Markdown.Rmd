@@ -67,10 +67,9 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
        col="red", cex=0.2) ###This plots the herbarium records with latitude and longitude on the map
 ```
 ![abiesammap](https://github.com/csleven/Mapping/blob/a5ddbd32a823bc23c4f4e488a76f68f391ff5a36/Distributions/abiesamMap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisEflora.png?raw=true" alt="bonap" width="350"/>
 
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisBonap.png?raw=true" alt="bonap" width="350"/>
-
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisEflora.png?raw=true" alt="bonap" width="350"/>
 
 #### Abies lasiocarpa
 ##### Temporal Histogram
