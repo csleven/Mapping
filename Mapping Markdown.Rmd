@@ -189,8 +189,8 @@ map(database="world", ylim=c(28, 71), xlim=c(-170, -38), fill= TRUE,
 points(Achillea_millefolium.txt$decimalLongitude, Achillea_millefolium.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map](https://github.com/csleven/Mapping/blob/master/Distributions/AchmillMap.png?raw=true)
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AchilleamillefoliumBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchmillMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchilleamillefoliumBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Alnus rubra
 ##### Temporal Histogram
@@ -210,8 +210,8 @@ plot(alnurubr, add=TRUE, xlim=c(-140,-120),ylim=c(20,60),
 points(Alnus_rubra.txt$decimalLongitude, Alnus_rubra.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map](https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubMap.png?raw=true)
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubraBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubraBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Amelanchier alnifolia
 ##### Temporal Histogram
@@ -231,8 +231,8 @@ plot(amelalni, add=TRUE, xlim=c(-140,-120),ylim=c(20,60),
 points(Amelanchier_alnifolia.txt$decimalLongitude, Amelanchier_alnifolia.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map](https://github.com/csleven/Mapping/blob/master/Distributions/AmealniMap.png?raw=true)
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AmelanchieralnifoliaBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AmealniMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AmelanchieralnifoliaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Arctostaphylos uva-ursi
 ##### Histogram
@@ -250,7 +250,7 @@ points(Arctostaphylos_uvaursi.txt$decimalLongitude, Arctostaphylos_uvaursi.txt$d
        col="red", cex=0.3)
 ```
 ![map]()
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/ArctostaphylosuvaursiBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ArctostaphylosuvaursiBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Athyrium_filix-femina
 ##### Histogram
@@ -268,7 +268,7 @@ points(Athyrium_filix-femina.txt$decimalLongitude, Athyrium_filix-femina.txt$dec
        col="red", cex=0.3)
 ```
 ![map]()
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AthyriumfilixfeminaBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AthyriumfilixfeminaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Calamagrostis rubescens
 ##### Histogram
@@ -285,8 +285,8 @@ map(database="world", ylim=c(32, 60), xlim=c(-130, -108), fill= TRUE,
 points(Calamagrostis_rubescens.txt$decimalLongitude, Calamagrostis_rubescens.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map](https://github.com/csleven/Mapping/blob/master/Distributions/CalmagMap.png?raw=true)
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/CalamagrostisrubescensBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CalmagMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CalamagrostisrubescensBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Cassiope mertensiana
 ##### Histogram
@@ -303,8 +303,8 @@ map(database="world", ylim=c(36, 61), xlim=c(-150, -109), fill= TRUE,
 points(Cassiope_mertensiana.txt$decimalLongitude, Cassiope_mertensiana.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map](https://github.com/csleven/Mapping/blob/master/Distributions/CasmerMap.png?raw=true)
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/CassiopemertensianaBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CasmerMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CassiopemertensianaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Ceanothus velutinus
 ##### Histogram
@@ -321,8 +321,8 @@ map(database="world", ylim=c(32, 56), xlim=c(-150, -100), fill= TRUE,
 points(Ceanothus_velutinus.txt$decimalLongitude, Ceanothus_velutinus.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map](https://github.com/csleven/Mapping/blob/master/Distributions/CeanvelMap.png?raw=true)
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/CeanothusvelutinusBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CeanvelMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CeanothusvelutinusBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Chamaecyparis nootkaensis
 ##### Temporal Histogram
@@ -343,8 +343,8 @@ plot(chamnoot, add=TRUE, xlim=c(-140,-120),ylim=c(20,60),
 points(Chamaecyparis_nootkatensis.txt$decimalLongitude, Chamaecyparis_nootkatensis.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![Map](https://github.com/csleven/Mapping/blob/master/Distributions/ChamnootMap.png?raw=true)
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/ChamaecyparisnootkatensisBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChamnootMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChamaecyparisnootkatensisBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Chimaphila umbellata
 ##### Histogram
@@ -361,8 +361,8 @@ map(database="world", ylim=c(32, 60), xlim=c(-140, -50), fill= TRUE,
 points(Chimaphila_umbellata.txt$decimalLongitude, Chimaphila_umbellata.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map](https://github.com/csleven/Mapping/blob/master/Distributions/ChimumbMap.png?raw=true)
-![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/ChimaphilaumbellataBonap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChimumbMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChimaphilaumbellataBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Clintonia uniflora
 ##### Histogram
@@ -379,7 +379,8 @@ map(database="world", ylim=c(35, 59), xlim=c(-140, -110), fill= TRUE,
 points(Clintonia_uniflora.txt$decimalLongitude, Clintonia_uniflora.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![map](https://github.com/csleven/Mapping/blob/master/Distributions/ClinuniMap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ClinuniMap.png?raw=true" alt="map" width="350"/>
+
 
 #### Cornus nuttallii
 ##### Temporal Histogram
