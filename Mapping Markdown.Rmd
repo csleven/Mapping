@@ -171,7 +171,7 @@ ggplot(data=Achillea_millefolium.txt,
 ![hist]()
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
-map(database="world", ylim=c(32, 52), xlim=c(-130, -110), fill= TRUE, 
+map(database="world", ylim=c(28, 71), xlim=c(-170, -38), fill= TRUE, 
     col="gray90")
 points(Achillea_millefolium.txt$decimalLongitude, Achillea_millefolium.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
@@ -217,6 +217,23 @@ points(Amelanchier_alnifolia.txt$decimalLongitude, Amelanchier_alnifolia.txt$dec
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/AmealniMap.png?raw=true)
+
+#### Arctostaphylos uva-ursi
+##### Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Arctostaphylos_uvaursi.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(28, 71), xlim=c(-170, -38), fill= TRUE, 
+    col="gray90")
+points(Arctostaphylos_uvaursi.txt$decimalLongitude, Arctostaphylos_uvaursi.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+![map]()
 
 #### Chamaecyparis nootkaensis
 ##### Temporal Histogram
