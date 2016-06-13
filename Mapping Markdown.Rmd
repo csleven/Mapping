@@ -67,6 +67,7 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
        col="red", cex=0.2) ###This plots the herbarium records with latitude and longitude on the map
 ```
 ![abiesammap](https://github.com/csleven/Mapping/blob/a5ddbd32a823bc23c4f4e488a76f68f391ff5a36/Distributions/abiesamMap.png?raw=true)
+![bonapmap](https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisBonap.png?raw=true)
 
 #### Abies lasiocarpa
 ##### Temporal Histogram
@@ -87,6 +88,8 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
        col="red", cex=0.3)
 ```       
 ![abieslasMap](https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true)
+![bonapmap](https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocarpaBonap.png?raw=true)
+![efloramap](https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocorpaEflora.png?raw=true)
 
 #### Abies procera
 ##### Temporal Histogram
@@ -107,6 +110,7 @@ points(Abies_procera.txt$decimalLongitude, Abies_procera.txt$decimalLatitude, pc
        col="red", cex=0.3)
 ```
 ![abiesprocMap](https://github.com/csleven/Mapping/blob/master/Distributions/AbiesprocMap.png?raw=true)
+![bonapmap](https://github.com/csleven/Mapping/blob/master/Distributions/AbiesproceraBonap.png?raw=true)
 
 #### Acer circinatum
 ##### Temporal Histogram 
@@ -127,6 +131,8 @@ points(Acer_circinatum.txt$decimalLongitude, Acer_circinatum.txt$decimalLatitude
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/AcercircMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AcercircinatumBonap.png?raw=true)
+![eflora](https://github.com/csleven/Mapping/blob/master/Distributions/AcercircinatumEflora.png?raw=true)
 
 #### Acer glabrum
 ##### Histogram
@@ -144,6 +150,9 @@ points(Acer_glabrum.txt$decimalLongitude, Acer_glabrum.txt$decimalLatitude, pch=
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabrumBonap.png?raw=true)
+![eflora](https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabrumEflora.png?raw=true)
+
 #### Acer macrophyllum
 ##### Histogram
 ```{r eval = TRUE, echo=TRUE}
@@ -160,6 +169,7 @@ points(Acer_macrophyllum.txt$decimalLongitude, Acer_macrophyllum.txt$decimalLati
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/AcermacMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AcermacrophyllumBonap.png?raw=true)
 
 #### Achillea millefolium
 ##### Histogram
@@ -177,6 +187,7 @@ points(Achillea_millefolium.txt$decimalLongitude, Achillea_millefolium.txt$decim
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/AchmillMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AchilleamillefoliumBonap.png?raw=true)
 
 #### Alnus rubra
 ##### Temporal Histogram
@@ -197,6 +208,7 @@ points(Alnus_rubra.txt$decimalLongitude, Alnus_rubra.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubraBonap.png?raw=true)
 
 #### Amelanchier alnifolia
 ##### Temporal Histogram
@@ -217,6 +229,7 @@ points(Amelanchier_alnifolia.txt$decimalLongitude, Amelanchier_alnifolia.txt$dec
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/AmealniMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AmelanchieralnifoliaBonap.png?raw=true)
 
 #### Arctostaphylos uva-ursi
 ##### Histogram
@@ -234,6 +247,7 @@ points(Arctostaphylos_uvaursi.txt$decimalLongitude, Arctostaphylos_uvaursi.txt$d
        col="red", cex=0.3)
 ```
 ![map]()
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/ArctostaphylosuvaursiBonap.png?raw=true)
 
 #### Athyrium_filix-femina
 ##### Histogram
@@ -251,6 +265,7 @@ points(Athyrium_filix-femina.txt$decimalLongitude, Athyrium_filix-femina.txt$dec
        col="red", cex=0.3)
 ```
 ![map]()
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/AthyriumfilixfeminaBonap.png?raw=true)
 
 #### Calamagrostis rubescens
 ##### Histogram
@@ -268,6 +283,7 @@ points(Calamagrostis_rubescens.txt$decimalLongitude, Calamagrostis_rubescens.txt
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/CalmagMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/CalamagrostisrubescensBonap.png?raw=true)
 
 #### Cassiope mertensiana
 ##### Histogram
@@ -285,6 +301,7 @@ points(Cassiope_mertensiana.txt$decimalLongitude, Cassiope_mertensiana.txt$decim
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/CasmerMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/CassiopemertensianaBonap.png?raw=true)
 
 #### Ceanothus velutinus
 ##### Histogram
@@ -302,6 +319,7 @@ points(Ceanothus_velutinus.txt$decimalLongitude, Ceanothus_velutinus.txt$decimal
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/CeanvelMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/CeanothusvelutinusBonap.png?raw=true)
 
 #### Chamaecyparis nootkaensis
 ##### Temporal Histogram
@@ -323,6 +341,7 @@ points(Chamaecyparis_nootkatensis.txt$decimalLongitude, Chamaecyparis_nootkatens
        col="red", cex=0.3)
 ```
 ![Map](https://github.com/csleven/Mapping/blob/master/Distributions/ChamnootMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/ChamaecyparisnootkatensisBonap.png?raw=true)
 
 #### Chimaphila umbellata
 ##### Histogram
@@ -340,6 +359,7 @@ points(Chimaphila_umbellata.txt$decimalLongitude, Chimaphila_umbellata.txt$decim
        col="red", cex=0.3)
 ```
 ![map](https://github.com/csleven/Mapping/blob/master/Distributions/ChimumbMap.png?raw=true)
+![bonap](https://github.com/csleven/Mapping/blob/master/Distributions/ChimaphilaumbellataBonap.png?raw=true)
 
 #### Clintonia uniflora
 ##### Histogram
