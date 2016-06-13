@@ -66,7 +66,7 @@ plot(abieamab, add=TRUE, xlim=c(-140,-110),ylim=c(48,64),
 points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, pch=4,
        col="red", cex=0.2) ###This plots the herbarium records with latitude and longitude on the map
 ```
-<img src="https://github.com/csleven/Mapping/blob/a5ddbd32a823bc23c4f4e488a76f68f391ff5a36/Distributions/abiesamMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/a5ddbd32a823bc23c4f4e488a76f68f391ff5a36/Distributions/abiesamMap.png?raw=true" alt="map"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisBonap.png?raw=true" alt="bonap" width="350"/>
 
@@ -88,7 +88,7 @@ plot(abielasi, add=TRUE, xlim=c(-140,-110),ylim=c(48,64),
 points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```       
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true" alt="map"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocarpaBonap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocorpaEflora.png?raw=true" alt="eflora" width="350"/>
 
@@ -111,7 +111,7 @@ plot(abieproc, add=TRUE, xlim=c(-130,-110),ylim=c(-50,85),
 points(Abies_procera.txt$decimalLongitude, Abies_procera.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesprocMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesprocMap.png?raw=true" alt="map"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesproceraBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Acer circinatum
@@ -132,7 +132,7 @@ plot(acercirc, add=TRUE, xlim=c(-140,-110),ylim=c(-50,85),
 points(Acer_circinatum.txt$decimalLongitude, Acer_circinatum.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcercircMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcercircMap.png?raw=true" alt="map"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcercircinatumBonap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcercircinatumEflora.png?raw=true" alt="eflora" width="350"/>
 
@@ -151,7 +151,7 @@ map(database="world", ylim=c(30, 61), xlim=c(-140, -100), fill= TRUE,
 points(Acer_glabrum.txt$decimalLongitude, Acer_glabrum.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabMap.png?raw=true" alt="map"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabrumBonap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabrumEflora.png?raw=true" alt="eflora" width="350"/>
 
@@ -170,7 +170,7 @@ map(database="world", ylim=c(32, 52), xlim=c(-130, -110), fill= TRUE,
 points(Acer_macrophyllum.txt$decimalLongitude, Acer_macrophyllum.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcermacMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcermacMap.png?raw=true" alt="map"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcermacrophyllumBonap.png?raw=true" alt="bonap" width="350"/>
 
 
@@ -189,7 +189,7 @@ map(database="world", ylim=c(28, 71), xlim=c(-170, -38), fill= TRUE,
 points(Achillea_millefolium.txt$decimalLongitude, Achillea_millefolium.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchmillMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchmillMap.png?raw=true" alt="map"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchilleamillefoliumBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Alnus rubra
@@ -210,7 +210,7 @@ plot(alnurubr, add=TRUE, xlim=c(-140,-120),ylim=c(20,60),
 points(Alnus_rubra.txt$decimalLongitude, Alnus_rubra.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubMap.png?raw=true" alt="map"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubraBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Amelanchier alnifolia
@@ -231,7 +231,7 @@ plot(amelalni, add=TRUE, xlim=c(-140,-120),ylim=c(20,60),
 points(Amelanchier_alnifolia.txt$decimalLongitude, Amelanchier_alnifolia.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AmealniMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AmealniMap.png?raw=true" alt="map"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AmelanchieralnifoliaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Arctostaphylos uva-ursi
@@ -250,7 +250,7 @@ points(Arctostaphylos_uvaursi.txt$decimalLongitude, Arctostaphylos_uvaursi.txt$d
        col="red", cex=0.3)
 ```
 ![map]()
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ArctostaphylosuvaursiBonap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ArctostaphylosuvaursiBonap.png?raw=true" alt="bonap"/>
 
 #### Athyrium_filix-femina
 ##### Histogram
