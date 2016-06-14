@@ -45,7 +45,9 @@ for(i in files) {
 ```
 
 #### Making Plots
-For tree and woody species, the USGS has range maps for North America with downloadable shape files that R can read and use. As these were easy to find, I started with these species.
+For tree and woody species, the USGS has range maps for North America with downloadable shape files that R can read and use; for these species, I plotted both the location of GBIF records with coordinates, and the USGS range maps in R. For all the other species, I just plotted the GBIF record locations.
+
+To compare coverage of the GBIF records, I also downloaded BONAP range maps, and BC e-flora occurence records, and inserted these images as well.
 
 
 #### Abies amabilis
@@ -69,8 +71,11 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
        col="red", cex=0.2) ###This plots the herbarium records with latitude and longitude on the map
 ```
 <img src="https://github.com/csleven/Mapping/blob/a5ddbd32a823bc23c4f4e488a76f68f391ff5a36/Distributions/abiesamMap.png?raw=true" alt="map"/>
+Map of herbarium records and USGS range, using R.
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisEflora.png?raw=true" alt="bonap" width="350"/>
+Occurence records from Eflora.
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisBonap.png?raw=true" alt="bonap" width="350"/>
+Range map from BONAP.
 
 #### Abies lasiocarpa
 ##### Temporal Histogram
