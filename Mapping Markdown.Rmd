@@ -649,7 +649,7 @@ ggplot(data=Pinus_contorta.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/PinucontHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 pinucont <- readShapePoly("pinucont.shp") 
@@ -660,14 +660,14 @@ plot(pinucont, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Pinus_contorta.txt$decimalLongitude, Pinus_contorta.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinucontMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinuscontortaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Pinus ponderosa
 ##### Temporal Histogram
 ```{r eval = TRUE}
-ggplot(data=Pinus_ponderosa.txt, 
+ggplot(data=Pinus_ponderosadist.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -679,7 +679,7 @@ map(database="world", ylim=c(22, 53), xlim=c(-140, -80), fill= TRUE,
     col="gray90")
 plot(pinupond, add=TRUE, xlim=c(-140,-120),ylim=c(10,55), 
      col=alpha("darkgreen", 0.6), border=FALSE)
-points(Pinus_ponderosa.txt$decimalLongitude, Pinus_ponderosa.txt$decimalLatitude, pch=4,
+points(Pinus_ponderosadist.txt$decimalLongitude, Pinus_ponderosadist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 <img src="" alt="bonap" width="350"/>
@@ -693,7 +693,7 @@ ggplot(data=Populus_balsamifera.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/PopubalHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 popubals <- readShapePoly("popubals.shp") 
@@ -704,14 +704,14 @@ plot(popubals, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Populus_balsamifera.txt$decimalLongitude, Populus_balsamifera.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PopubalMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PopulusbalsamiferaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Populus trichocarpa
 ##### Temporal Histogram
 ```{r eval = TRUE}
-ggplot(data=Populus_trichocarpa.txt, 
+ggplot(data=Populus_trichocarpaDist.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -723,7 +723,7 @@ map(database="world", ylim=c(26, 63), xlim=c(-155, -100), fill= TRUE,
     col="gray90")
 plot(poputric, add=TRUE, xlim=c(-140,-120),ylim=c(10,55), 
      col=alpha("darkgreen", 0.6), border=FALSE)
-points(Populus_trichocarpa.txt$decimalLongitude, Populus_trichocarpa.txt$decimalLatitude, pch=4,
+points(Populus_trichocarpaDist.txt$decimalLongitude, Populus_trichocarpaDist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 <img src="" alt="bonap" width="350"/>
@@ -749,7 +749,7 @@ points(Pseudotsuga_menziesiidist.txt$decimalLongitude, Pseudotsuga_menziesiidist
        col="red", cex=0.3)
 ```
 <img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PseudotsugamenziesiiEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Sorbus sitchensis
