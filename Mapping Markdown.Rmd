@@ -71,10 +71,15 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
        col="red", cex=0.2) ###This plots the herbarium records with latitude and longitude on the map
 ```
 <img src="https://github.com/csleven/Mapping/blob/a5ddbd32a823bc23c4f4e488a76f68f391ff5a36/Distributions/abiesamMap.png?raw=true" alt="map"/>
+
 Map of herbarium records and USGS range, using R.
+
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisEflora.png?raw=true" alt="bonap" width="350"/>
+
 Occurence records from Eflora.
+
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesamabilisBonap.png?raw=true" alt="bonap" width="350"/>
+
 Range map from BONAP.
 
 #### Abies lasiocarpa
@@ -96,8 +101,17 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
        col="red", cex=0.3)
 ```       
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true" alt="map"/>
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocarpaBonap.png?raw=true" alt="bonap" width="350"/>
+
+Herbarium records and USGS range.
+
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocorpaEflora.png?raw=true" alt="eflora" width="350"/>
+
+Eflora occurences.
+
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocarpaBonap.png?raw=true" alt="bonap" width="350"/>
+
+BONAP range map.
+
 
 
 #### Abies procera
