@@ -259,7 +259,7 @@ points(Arctostaphylos_uvaursidist.txt$decimalLongitude, Arctostaphylos_uvaursidi
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ArctoMap.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ArctostaphylosuvaursiEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ArctostaphylosuvaursiBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Athyrium_filix-femina
@@ -396,8 +396,8 @@ points(Clintonia_uniflora.txt$decimalLongitude, Clintonia_uniflora.txt$decimalLa
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ClinuniMap.png?raw=true" alt="map" width="350"/>
-<img src="" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ClintoniaunifloraEflora.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ClintoniaunifloraBonap.png?raw=true" alt="map" width="350"/>
 
 #### Cornus nuttallii
 ##### Temporal Histogram
@@ -419,7 +419,7 @@ points(Cornus_nuttallii.txt$decimalLongitude, Cornus_nuttallii.txt$decimalLatitu
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornutMap.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornusnuttalliEflora.png?raw=true" alt="map" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornusnuttalliiBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Cornus sericea
 ##### Temporal Histogram
@@ -460,7 +460,8 @@ points(Epilobium_angustifolium.txt$decimalLongitude, Epilobium_angustifolium.txt
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/EpiangMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/EpilobiumangustifoliumEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/EpilobiumangustifoliumBonapChamaenerion.png?raw=true" alt="bonap" width="350"/>
+BONAP distribution for Chamaenerion angustifolium, a synonym of E. angustifolium.
 
 #### Gaultheria ovatifolia
 ##### Histogram
@@ -479,7 +480,7 @@ points(Gaultheria_ovatifolia.txt$decimalLongitude, Gaultheria_ovatifolia.txt$dec
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/GaulovaMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/GaultheriaovatifoliaEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/GaultheriaovatifoliaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Goodyera oblongifolia
 ##### Histogram
@@ -498,7 +499,7 @@ points(Goodyera_oblongifolia.txt$decimalLongitude, Goodyera_oblongifolia.txt$dec
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/GoodobMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/GoodyeraoblongifoliaEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/GoodyeraoblongifoliaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Gymnocarpium dryopteris
 ##### Histogram
@@ -517,7 +518,7 @@ points(Gymnocarpium_dryopteris.txt$decimalLongitude, Gymnocarpium_dryopteris.txt
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/GymdryMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/GymnocarpiumdryopterisEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/GymnocarpiumdryopterisBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Hieracium albiflorum
 ##### Histogram
@@ -536,7 +537,7 @@ points(Hieracium_albiflorum.txt$decimalLongitude, Hieracium_albiflorum.txt$decim
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/HiealbMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/HieraciumalbiflorumEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/HieraciumalbiflorumBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Larix lyallii
 ##### Temporal Histogram
@@ -558,7 +559,7 @@ points(Larix_lyallii.txt$decimalLongitude, Larix_lyallii.txt$decimalLatitude, pc
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/LarilyalMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/LarixlyalliiEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/LarixlyalliiBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Linnaea borealis
 ##### Histogram
@@ -577,7 +578,7 @@ points(Linnaea_borealisdist.txt$decimalLongitude, Linnaea_borealisdist.txt$decim
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/LinnMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/LinnaeaborealisEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/LinnaeaborealisBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Luetkea pectinata
 ##### Histogram
@@ -596,7 +597,7 @@ points(Luetkea_pectinata.txt$decimalLongitude, Luetkea_pectinata.txt$decimalLati
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/LuetMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/LuetkeapectinataEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/LuetkeapectinataBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Mahonia nervosa
 ##### Histogram
@@ -615,7 +616,7 @@ points(Mahonia_nervosa.txt$decimalLongitude, Mahonia_nervosa.txt$decimalLatitude
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/MahoMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/MahonianervosaEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/MahonianervosaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Maianthemum racemosum
 ##### Histogram
@@ -634,7 +635,7 @@ points(Maianthemum_racemosumdist.txt$decimalLongitude, Maianthemum_racemosumdist
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/MaiaMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/MaianthemumracemosumEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/MaianthemumracemosumBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Oplopanax horridus
 ##### Histogram
@@ -653,7 +654,7 @@ points(Oplopanax_horridus.txt$decimalLongitude, Oplopanax_horridus.txt$decimalLa
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/OploMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/OplopanaxhorridusEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/OplopanaxhorridusBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Pachystima myrsinites
 ##### Histogram
@@ -672,7 +673,7 @@ points(Pachystima_myrsinites.txt$decimalLongitude, Pachystima_myrsinites.txt$dec
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PachMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PaxistimamyrsinitesEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PaxistimamyrsinitesBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Phyllodoce empetriformis
 ##### Histogram
@@ -691,7 +692,7 @@ points(Phyllodoce_empetriformis.txt$decimalLongitude, Phyllodoce_empetriformis.t
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PhyllMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PhyllodoceempetriformisEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PhyllodoceempetriformisBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Picea engelmannii
 ##### Temporal Histogram
@@ -713,7 +714,7 @@ points(Picea_engelmannii.txt$decimalLongitude, Picea_engelmannii.txt$decimalLati
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PicengMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PiceaengelmanniEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PiceaengelmanniiBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Picea glauca
 ##### Temporal Histogram
@@ -735,7 +736,7 @@ points(Picea_glauca.txt$decimalLongitude, Picea_glauca.txt$decimalLatitude, pch=
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PiceglauMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PiceaglaucaEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PiceaglaucaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Picea sitchensis
 ##### Temporal Histogram
@@ -757,7 +758,7 @@ points(Picea_sitchensisdist.txt$decimalLongitude, Picea_sitchensisdist.txt$decim
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PicesitchMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PiceasitchensisEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PiceasitchensisBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Pinus albicaulis
 ##### Temporal Histogram
@@ -779,7 +780,7 @@ points(Pinus_albicaulis.txt$decimalLongitude, Pinus_albicaulis.txt$decimalLatitu
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinualbiMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinusalbicaulisEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinusalbicaulisBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Pinus contorta
 ##### Temporal Histogram
@@ -801,7 +802,7 @@ points(Pinus_contorta.txt$decimalLongitude, Pinus_contorta.txt$decimalLatitude, 
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinucontMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinuscontortaEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinuscontortaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Pinus ponderosa
 ##### Temporal Histogram
@@ -823,7 +824,7 @@ points(Pinus_ponderosadist.txt$decimalLongitude, Pinus_ponderosadist.txt$decimal
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinupondMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinusponderosaEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinusponderosaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Populus balsamifera
 ##### Temporal Histogram
@@ -845,7 +846,7 @@ points(Populus_balsamifera.txt$decimalLongitude, Populus_balsamifera.txt$decimal
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PopubalMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PopulusbalsamiferaEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PopulusbalsamiferaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Populus trichocarpa
 ##### Temporal Histogram
@@ -868,6 +869,7 @@ points(Populus_trichocarpaDist.txt$decimalLongitude, Populus_trichocarpaDist.txt
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PoputricMap.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
+Neither Eflora nor BONAP seem to count P. trichocarpa as a species, and have it down as P. balsamifera instead, I believe.
 
 #### Pseudotsuga menziesii
 ##### Temporal Histogram
@@ -889,7 +891,7 @@ points(Pseudotsuga_menziesiidist.txt$decimalLongitude, Pseudotsuga_menziesiidist
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/pseuMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PseudotsugamenziesiiEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PseudotsugamenziesiiBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Sorbus sitchensis
 ##### Temporal Histogram
@@ -911,7 +913,7 @@ points(Sorbus_sitchensisdist.txt$decimalLongitude, Sorbus_sitchensisdist.txt$dec
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/SorbMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/SorbussitchensisEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/SorbussitchensisBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Thuja plicata
 ##### Temporal Histogram
@@ -933,7 +935,7 @@ points(Thuja_plicatadist.txt$decimalLongitude, Thuja_plicatadist.txt$decimalLati
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/thujMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ThujaplicataEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ThujaplicataBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Tsuga heterophylla
 ##### Temporal Histogram
@@ -955,7 +957,7 @@ points(Tsuga_heterophylla.txt$decimalLongitude, Tsuga_heterophylla.txt$decimalLa
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsughetMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsugaheterophyllaEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsugaheterophyllaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Tsuga mertensiana
 ##### Temporal Histogram
@@ -977,7 +979,7 @@ points(Tsuga_mertensiana.txt$decimalLongitude, Tsuga_mertensiana.txt$decimalLati
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsugmertMap.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsugamertensianaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Vaccinium alaskaense
 ##### Histogram
@@ -996,7 +998,7 @@ points(Vaccinium_alaskaense.txt$decimalLongitude, Vaccinium_alaskaense.txt$decim
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/VaccalMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/VacciniumalaskaenseEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/VacciniumalaskaenseBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Vaccinium deliciosum
 ##### Histogram
@@ -1015,7 +1017,7 @@ points(Vaccinium_deliciosumdist.txt$decimalLongitude, Vaccinium_deliciosumdist.t
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/VaccdeMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/VacciniumdeliciosumEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/VacciniumdeliciosumBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Vaccinium membranaceum
 ##### Histogram
@@ -1034,7 +1036,7 @@ points(Vaccinium_membranaceumdist.txt$decimalLongitude, Vaccinium_membranaceumdi
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/VaccmeMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/VacciniummembranaceumEflora.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/VacciniummembranaceumBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Valeriana sitchensis
 ##### Temporal Histogram
@@ -1053,7 +1055,7 @@ points(Valeriana_sitchensis.txt$decimalLongitude, Valeriana_sitchensis.txt$decim
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ValsitMap.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ValerianasitchensisBonap.png?raw=true" alt="bonap" width="350"/>
 
 ### Files Used
 All of the files I have used for distributions etc. can be found [here](https://github.com/csleven/Mapping)
