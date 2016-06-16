@@ -78,7 +78,7 @@ points(Abies_amabilis.txt$decimalLongitude, Abies_amabilis.txt$decimalLatitude, 
 #### Abies lasiocarpa
 ##### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}
-ggplot(data=Abies_lasiocarpa.txt, 
+ggplot(data=Abies_lasiocarpadist.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -90,7 +90,7 @@ map(database="world", ylim=c(30, 70), xlim=c(-150, -100), fill= TRUE,
     col="gray90")
 plot(abielasi, add=TRUE, xlim=c(-140,-110),ylim=c(48,64), 
      col=alpha("darkgreen", 0.6), border=FALSE)
-points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitude, pch=4,
+points(Abies_lasiocarpadist.txt$decimalLongitude, Abies_lasiocarpadist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```       
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true" alt="map" width="350"/>
@@ -100,7 +100,7 @@ points(Abies_lasiocarpa.txt$decimalLongitude, Abies_lasiocarpa.txt$decimalLatitu
 #### Abies procera
 ##### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}
-ggplot(data=Abies_procera.txt, 
+ggplot(data=Abies_proceradist.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -112,7 +112,7 @@ map(database="world", ylim=c(40, 50), xlim=c(-140, -118), fill= TRUE,
     col="gray90")
 plot(abieproc, add=TRUE, xlim=c(-130,-110),ylim=c(-50,85), 
      col=alpha("darkgreen", 0.6), border=FALSE)
-points(Abies_procera.txt$decimalLongitude, Abies_procera.txt$decimalLatitude, pch=4,
+points(Abies_proceradist.txt$decimalLongitude, Abies_proceradist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesprocMap.png?raw=true" alt="map" width="350"/>
@@ -163,7 +163,7 @@ points(Acer_glabrum.txt$decimalLongitude, Acer_glabrum.txt$decimalLatitude, pch=
 #### Acer macrophyllum
 ##### Histogram
 ```{r eval = TRUE, echo=TRUE}
-ggplot(data=Acer_macrophyllum.txt, 
+ggplot(data=Acer_macrophyllumdist.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -172,7 +172,7 @@ ggplot(data=Acer_macrophyllum.txt,
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(32, 52), xlim=c(-130, -110), fill= TRUE, 
     col="gray90")
-points(Acer_macrophyllum.txt$decimalLongitude, Acer_macrophyllum.txt$decimalLatitude, pch=4,
+points(Acer_macrophyllumdist.txt$decimalLongitude, Acer_macrophyllumdist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcermacMap.png?raw=true" alt="map" width="350"/>
@@ -183,7 +183,7 @@ points(Acer_macrophyllum.txt$decimalLongitude, Acer_macrophyllum.txt$decimalLati
 #### Achillea millefolium
 ##### Histogram
 ```{r eval = TRUE, echo=TRUE}
-ggplot(data=Achillea_millefolium.txt, 
+ggplot(data=Achillea_millefoliumdist.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -192,7 +192,7 @@ ggplot(data=Achillea_millefolium.txt,
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(28, 71), xlim=c(-170, -38), fill= TRUE, 
     col="gray90")
-points(Achillea_millefolium.txt$decimalLongitude, Achillea_millefolium.txt$decimalLatitude, pch=4,
+points(Achillea_millefoliumdist.txt$decimalLongitude, Achillea_millefoliumdist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchmillMap.png?raw=true" alt="map" width="350"/>
@@ -202,7 +202,7 @@ points(Achillea_millefolium.txt$decimalLongitude, Achillea_millefolium.txt$decim
 #### Alnus rubra
 ##### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}
-ggplot(data=Alnus_rubra.txt, 
+ggplot(data=Alnus_rubradist.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -214,7 +214,7 @@ map(database="world", ylim=c(20, 61), xlim=c(-140, -115), fill= TRUE,
     col="gray90")
 plot(alnurubr, add=TRUE, xlim=c(-140,-120),ylim=c(20,60), 
      col=alpha("darkgreen", 0.6), border=FALSE)
-points(Alnus_rubra.txt$decimalLongitude, Alnus_rubra.txt$decimalLatitude, pch=4,
+points(Alnus_rubradist.txt$decimalLongitude, Alnus_rubradist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubMap.png?raw=true" alt="map" width="350"/>
@@ -224,7 +224,7 @@ points(Alnus_rubra.txt$decimalLongitude, Alnus_rubra.txt$decimalLatitude, pch=4,
 #### Amelanchier alnifolia
 ##### Temporal Histogram
 ```{r eval = TRUE, echo=TRUE}
-ggplot(data=Amelanchier_alnifolia.txt, 
+ggplot(data=Amelanchier_alnifoliadist.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -236,7 +236,7 @@ map(database="world", ylim=c(33, 85), xlim=c(-160, -70), fill= TRUE,
     col="gray90")
 plot(amelalni, add=TRUE, xlim=c(-140,-120),ylim=c(20,60), 
      col=alpha("darkgreen", 0.6), border=FALSE)
-points(Amelanchier_alnifolia.txt$decimalLongitude, Amelanchier_alnifolia.txt$decimalLatitude, pch=4,
+points(Amelanchier_alnifoliadist.txt$decimalLongitude, Amelanchier_alnifoliadist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AmealniMap.png?raw=true" alt="map" width="350"/>
