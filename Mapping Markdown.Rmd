@@ -137,8 +137,9 @@ points(Acer_circinatumdist.txt$decimalLongitude, Acer_circinatumdist.txt$decimal
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcercircMap.png?raw=true" alt="map" width="350"/>
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcercircinatumBonap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcercircinatumEflora.png?raw=true" alt="eflora" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcercircinatumBonap.png?raw=true" alt="bonap" width="350"/>
+
 
 #### Acer glabrum
 ##### Histogram
@@ -156,8 +157,8 @@ points(Acer_glabrum.txt$decimalLongitude, Acer_glabrum.txt$decimalLatitude, pch=
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabMap.png?raw=true" alt="map" width="350"/>
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabrumBonap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabrumEflora.png?raw=true" alt="eflora" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcerglabrumBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Acer macrophyllum
 ##### Histogram
@@ -175,6 +176,7 @@ points(Acer_macrophyllum.txt$decimalLongitude, Acer_macrophyllum.txt$decimalLati
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcermacMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcermacrophyllumEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AcermacrophyllumBonap.png?raw=true" alt="bonap" width="350"/>
 
 
@@ -194,6 +196,7 @@ points(Achillea_millefolium.txt$decimalLongitude, Achillea_millefolium.txt$decim
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchmillMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchilleamillefoliumEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchilleamillefoliumBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Alnus rubra
@@ -215,6 +218,7 @@ points(Alnus_rubra.txt$decimalLongitude, Alnus_rubra.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubraEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AlnusrubraBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Amelanchier alnifolia
@@ -236,6 +240,7 @@ points(Amelanchier_alnifolia.txt$decimalLongitude, Amelanchier_alnifolia.txt$dec
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AmealniMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AmelanchieralnifoliaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AmelanchieralnifoliaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Arctostaphylos uva-ursi
@@ -245,7 +250,7 @@ ggplot(data=Arctostaphylos_uvaursidist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/ArctoHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(30, 71), xlim=c(-170, -50), fill= TRUE, 
@@ -253,6 +258,8 @@ map(database="world", ylim=c(30, 71), xlim=c(-170, -50), fill= TRUE,
 points(Arctostaphylos_uvaursidist.txt$decimalLongitude, Arctostaphylos_uvaursidist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ArctoMap.png?raw=true" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ArctostaphylosuvaursiBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Athyrium_filix-femina
@@ -262,7 +269,7 @@ ggplot(data=Athyrium_filixfeminaDist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/AthyHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(28, 68), xlim=c(-170, -55), fill= TRUE, 
@@ -270,6 +277,8 @@ map(database="world", ylim=c(28, 68), xlim=c(-170, -55), fill= TRUE,
 points(Athyrium_filixfeminaDist.txt$decimalLongitude, Athyrium_filixfeminaDist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AthyMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/AthyriumfilixfeminaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AthyriumfilixfeminaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Calamagrostis rubescens
@@ -288,12 +297,13 @@ points(Calamagrostis_rubescens.txt$decimalLongitude, Calamagrostis_rubescens.txt
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CalmagMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CalamagrostisrubescensEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CalamagrostisrubescensBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Cassiope mertensiana
 ##### Histogram
 ```{r eval = TRUE, echo=TRUE}
-ggplot(data=Cassiope_mertensiana.txt, 
+ggplot(data=Cassiope_mertensianadist.txt, 
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
@@ -302,10 +312,11 @@ ggplot(data=Cassiope_mertensiana.txt,
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(36, 61), xlim=c(-150, -109), fill= TRUE, 
     col="gray90")
-points(Cassiope_mertensiana.txt$decimalLongitude, Cassiope_mertensiana.txt$decimalLatitude, pch=4,
+points(Cassiope_mertensianadist.txt$decimalLongitude, Cassiope_mertensianadist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CasmerMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CassiopemertensianaEflora.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CassiopemertensianaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Ceanothus velutinus
@@ -324,6 +335,7 @@ points(Ceanothus_velutinus.txt$decimalLongitude, Ceanothus_velutinus.txt$decimal
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CeanvelMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CeanothusvelutinusEflora.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CeanothusvelutinusBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Chamaecyparis nootkaensis
@@ -345,6 +357,7 @@ plot(chamnoot, add=TRUE, xlim=c(-140,-120),ylim=c(20,60),
 points(Chamaecyparis_nootkatensis.txt$decimalLongitude, Chamaecyparis_nootkatensis.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChamnootMap.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChamnootMap.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChamaecyparisnootkatensisBonap.png?raw=true" alt="bonap" width="350"/>
 
@@ -383,6 +396,7 @@ points(Clintonia_uniflora.txt$decimalLongitude, Clintonia_uniflora.txt$decimalLa
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ClinuniMap.png?raw=true" alt="map" width="350"/>
+<img src="" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ClintoniaunifloraEflora.png?raw=true" alt="bonap" width="350"/>
 
 #### Cornus nuttallii
@@ -403,7 +417,9 @@ plot(cornnutt, add=TRUE, xlim=c(-130,-120),ylim=c(10,55),
 points(Cornus_nuttallii.txt$decimalLongitude, Cornus_nuttallii.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-![Map](https://github.com/csleven/Mapping/blob/master/Distributions/CornutMap.png?raw=true)
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornutMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornusnuttalliEflora.png?raw=true" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
 
 #### Cornus sericea
 ##### Temporal Histogram
@@ -425,6 +441,7 @@ points(Cornus_sericea.txt$decimalLongitude, Cornus_sericea.txt$decimalLatitude, 
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornstolMap.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornussericeaEflora.png?raw=true" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
 
 #### Epilobium angustifolium
 ##### Histogram
@@ -550,7 +567,7 @@ ggplot(data=Linnaea_borealisdist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/LinnHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(33, 71), xlim=c(-190, -55), fill= TRUE, 
@@ -558,8 +575,8 @@ map(database="world", ylim=c(33, 71), xlim=c(-190, -55), fill= TRUE,
 points(Linnaea_borealisdist.txt$decimalLongitude, Linnaea_borealisdist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/LinnMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/LinnaeaborealisEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Luetkea pectinata
@@ -569,7 +586,7 @@ ggplot(data=Luetkea_pectinata.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/LuetHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(33, 69), xlim=c(-162, -116), fill= TRUE, 
@@ -577,8 +594,8 @@ map(database="world", ylim=c(33, 69), xlim=c(-162, -116), fill= TRUE,
 points(Luetkea_pectinata.txt$decimalLongitude, Luetkea_pectinata.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/LuetMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/LuetkeapectinataEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Mahonia nervosa
@@ -588,7 +605,7 @@ ggplot(data=Mahonia_nervosa.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/MahoHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(34, 52), xlim=c(-162, -115), fill= TRUE, 
@@ -596,8 +613,8 @@ map(database="world", ylim=c(34, 52), xlim=c(-162, -115), fill= TRUE,
 points(Mahonia_nervosa.txt$decimalLongitude, Mahonia_nervosa.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/MahoMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/MahonianervosaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Maianthemum racemosum
@@ -607,7 +624,7 @@ ggplot(data=Maianthemum_racemosumdist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/MaiaHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(30, 66), xlim=c(-152, -60), fill= TRUE, 
@@ -615,8 +632,8 @@ map(database="world", ylim=c(30, 66), xlim=c(-152, -60), fill= TRUE,
 points(Maianthemum_racemosumdist.txt$decimalLongitude, Maianthemum_racemosumdist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/MaiaMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/MaianthemumracemosumEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Oplopanax horridus
@@ -626,7 +643,7 @@ ggplot(data=Oplopanax_horridus.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/OploHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(42, 63), xlim=c(-157, -85), fill= TRUE, 
@@ -634,8 +651,8 @@ map(database="world", ylim=c(42, 63), xlim=c(-157, -85), fill= TRUE,
 points(Oplopanax_horridus.txt$decimalLongitude, Oplopanax_horridus.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/OploMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/OplopanaxhorridusEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Pachystima myrsinites
@@ -645,7 +662,7 @@ ggplot(data=Pachystima_myrsinites.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/PachHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(31, 56), xlim=c(-131, -103), fill= TRUE, 
@@ -653,8 +670,8 @@ map(database="world", ylim=c(31, 56), xlim=c(-131, -103), fill= TRUE,
 points(Pachystima_myrsinites.txt$decimalLongitude, Pachystima_myrsinites.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PachMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PaxistimamyrsinitesEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Phyllodoce empetriformis
@@ -664,7 +681,7 @@ ggplot(data=Phyllodoce_empetriformis.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/PhyllHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(35, 66), xlim=c(-140, -108), fill= TRUE, 
@@ -672,8 +689,8 @@ map(database="world", ylim=c(35, 66), xlim=c(-140, -108), fill= TRUE,
 points(Phyllodoce_empetriformis.txt$decimalLongitude, Phyllodoce_empetriformis.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PhyllMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PhyllodoceempetriformisEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Picea engelmannii
@@ -727,7 +744,7 @@ ggplot(data=Picea_sitchensisdist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/PicesitchHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 picesitc <- readShapePoly("picesitc.shp") 
@@ -793,7 +810,7 @@ ggplot(data=Pinus_ponderosadist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/PinupondHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 pinupond <- readShapePoly("pinupond.shp") 
@@ -804,8 +821,8 @@ plot(pinupond, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Pinus_ponderosadist.txt$decimalLongitude, Pinus_ponderosadist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinupondMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinusponderosaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Populus balsamifera
@@ -837,7 +854,7 @@ ggplot(data=Populus_trichocarpaDist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/poputricHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 poputric <- readShapePoly("poputric.shp") 
@@ -848,7 +865,7 @@ plot(poputric, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Populus_trichocarpaDist.txt$decimalLongitude, Populus_trichocarpaDist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/PoputricMap.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
@@ -859,7 +876,7 @@ ggplot(data=Pseudotsuga_menziesiidist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/pseuHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 pseumenz <- readShapePoly("pseumenz.shp") 
@@ -870,7 +887,7 @@ plot(pseumenz, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Pseudotsuga_menziesiidist.txt$decimalLongitude, Pseudotsuga_menziesiidist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/pseuMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PseudotsugamenziesiiEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
@@ -881,7 +898,7 @@ ggplot(data=Sorbus_sitchensisdist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/SorbHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 sorbsitc <- readShapePoly("sorbsitc.shp") 
@@ -892,8 +909,8 @@ plot(sorbsitc, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Sorbus_sitchensisdist.txt$decimalLongitude, Sorbus_sitchensisdist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/SorbMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/SorbussitchensisEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Thuja plicata
@@ -903,7 +920,7 @@ ggplot(data=Thuja_plicatadist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/ThujHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 thujplic <- readShapePoly("thujplic.shp") 
@@ -914,8 +931,8 @@ plot(thujplic, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Thuja_plicatadist.txt$decimalLongitude, Thuja_plicatadist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/thujMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ThujaplicataEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Tsuga heterophylla
@@ -925,7 +942,7 @@ ggplot(data=Tsuga_heterophylla.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/TsughetHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 tsughete <- readShapePoly("tsughete.shp") 
@@ -936,8 +953,8 @@ plot(tsughete, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Tsuga_heterophylla.txt$decimalLongitude, Tsuga_heterophylla.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsughetMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsugaheterophyllaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Tsuga mertensiana
@@ -947,7 +964,7 @@ ggplot(data=Tsuga_mertensiana.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/TsugmertHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE}
 tsugmert <- readShapePoly("tsugmert.shp") 
@@ -958,7 +975,7 @@ plot(tsugmert, add=TRUE, xlim=c(-140,-120),ylim=c(10,55),
 points(Tsuga_mertensiana.txt$decimalLongitude, Tsuga_mertensiana.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsugmertMap.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
@@ -969,7 +986,7 @@ ggplot(data=Vaccinium_alaskaense.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/VaccalHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(43, 59), xlim=c(-140, -117), fill= TRUE, 
@@ -977,8 +994,8 @@ map(database="world", ylim=c(43, 59), xlim=c(-140, -117), fill= TRUE,
 points(Vaccinium_alaskaense.txt$decimalLongitude, Vaccinium_alaskaense.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/VaccalMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/VacciniumalaskaenseEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Vaccinium deliciosum
@@ -988,7 +1005,7 @@ ggplot(data=Vaccinium_deliciosumdist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/VaccdeHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(38, 55), xlim=c(-133, -119), fill= TRUE, 
@@ -996,8 +1013,8 @@ map(database="world", ylim=c(38, 55), xlim=c(-133, -119), fill= TRUE,
 points(Vaccinium_deliciosumdist.txt$decimalLongitude, Vaccinium_deliciosumdist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/VaccdeMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/VacciniumdeliciosumEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Vaccinium membranaceum
@@ -1007,7 +1024,7 @@ ggplot(data=Vaccinium_membranaceumdist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/VaccmeHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(38, 62), xlim=c(-133, -102), fill= TRUE, 
@@ -1015,8 +1032,8 @@ map(database="world", ylim=c(38, 62), xlim=c(-133, -102), fill= TRUE,
 points(Vaccinium_membranaceumdist.txt$decimalLongitude, Vaccinium_membranaceumdist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/VaccmeMap.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/VacciniummembranaceumEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
 #### Valeriana sitchensis
@@ -1026,7 +1043,7 @@ ggplot(data=Valeriana_sitchensis.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![hist]()
+![hist](https://github.com/csleven/Mapping/blob/master/Distributions/ValsitHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE} 
 map(database="world", ylim=c(38, 70), xlim=c(-153, -107), fill= TRUE, 
@@ -1034,7 +1051,7 @@ map(database="world", ylim=c(38, 70), xlim=c(-153, -107), fill= TRUE,
 points(Valeriana_sitchensis.txt$decimalLongitude, Valeriana_sitchensis.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ValsitMap.png?raw=true" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 <img src="" alt="bonap" width="350"/>
 
