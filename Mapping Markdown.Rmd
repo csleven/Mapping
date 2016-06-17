@@ -50,9 +50,13 @@ For tree and woody species, the USGS has range maps for North America with downl
 To compare coverage of the GBIF records, I also downloaded BONAP (Biota of North America Program) range maps, and BC e-flora occurence records, and inserted these images as well.
 
 The BONAP colour key is as follows:
+
+
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ColourKeyBonap.png?raw=true" alt="map" width="500"/>
 
 The BC E-flora colour key is as follows:
+
+
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ColourKeyEflora.png?raw=true" alt="map" width="500"/>
 
 
@@ -102,7 +106,6 @@ points(Abies_lasiocarpadist.txt$decimalLongitude, Abies_lasiocarpadist.txt$decim
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocorpaEflora.png?raw=true" alt="eflora" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocarpaBonap.png?raw=true" alt="bonap" width="350"/>
-No Eflora map available, as not found in BC.
 
 #### Abies procera
 ##### Temporal Histogram
@@ -124,6 +127,8 @@ points(Abies_proceradist.txt$decimalLongitude, Abies_proceradist.txt$decimalLati
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesprocMap.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbiesproceraBonap.png?raw=true" alt="bonap" width="350"/>
+
+No Eflora map available, as not found in BC.
 
 #### Acer circinatum
 ##### Temporal Histogram 
@@ -365,7 +370,7 @@ points(Chamaecyparis_nootkatensis.txt$decimalLongitude, Chamaecyparis_nootkatens
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChamnootMap.png?raw=true" alt="map" width="350"/>
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChamnootkatensisEflora.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChamaecyparisnootkaensisEflora.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ChamaecyparisnootkatensisBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Chimaphila umbellata
@@ -1194,7 +1199,7 @@ points(Trientalis_borealisdist.txt$decimalLongitude, Trientalis_borealisdist.txt
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/TrienMap.png?raw=true" alt="map" width="350"/>
 
-Neither Eflora or BONAP include this name or synonyms, as far as I can tell.
+Neither Eflora or BONAP include this name or its synonyms, as far as I can tell.
 
 #### Tsuga heterophylla
 ##### Temporal Histogram
@@ -1237,7 +1242,7 @@ points(Tsuga_mertensiana.txt$decimalLongitude, Tsuga_mertensiana.txt$decimalLati
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsugmertMap.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsugamertensianaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/TsugamertensianaBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Vaccinium alaskaense
@@ -1313,7 +1318,7 @@ points(Valeriana_sitchensis.txt$decimalLongitude, Valeriana_sitchensis.txt$decim
        col="red", cex=0.3)
 ```
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ValsitMap.png?raw=true" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ValerianasitchensisEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ValerianasitchensisBonap.png?raw=true" alt="bonap" width="350"/>
 
 ### Files Used
@@ -1324,3 +1329,5 @@ All of the files I have used for distributions etc. can be found [here](https://
 - [USGS Tree Ranges](http://esp.cr.usgs.gov/data/little/)
 - [R Studio Markdown Intro](http://rmarkdown.rstudio.com/authoring_quick_tour.html) and [R Studio Markdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 - A collection of links about histograms: [here](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/hist.html), [here]()
+- Biota of North America Project (BONAP) [North American Plant Atlas](http://bonap.net/napa)
+- [E-Flora BC](http://ibis.geog.ubc.ca/biodiversity/eflora/)
