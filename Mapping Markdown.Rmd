@@ -47,7 +47,11 @@ for(i in files) {
 #### Making Plots
 For tree and woody species, the USGS has range maps for North America with downloadable shape files that R can read and use; for these species, I plotted both the location of GBIF records with coordinates, and the USGS range maps in R. For all the other species, I just plotted the GBIF record locations.
 
-To compare coverage of the GBIF records, I also downloaded BONAP range maps, and BC e-flora occurence records, and inserted these images as well.
+To compare coverage of the GBIF records, I also downloaded BONAP (Biota of North America Program) range maps, and BC e-flora occurence records, and inserted these images as well.
+
+The BONAP colour key is as follows:
+
+The BC E-flora colour key is as follows:
 
 
 #### Abies amabilis
@@ -96,6 +100,7 @@ points(Abies_lasiocarpadist.txt$decimalLongitude, Abies_lasiocarpadist.txt$decim
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasMap.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocorpaEflora.png?raw=true" alt="eflora" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AbieslasiocarpaBonap.png?raw=true" alt="bonap" width="350"/>
+No Eflora map available, as not found in BC.
 
 #### Abies procera
 ##### Temporal Histogram
@@ -399,6 +404,26 @@ points(Clintonia_uniflora.txt$decimalLongitude, Clintonia_uniflora.txt$decimalLa
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ClintoniaunifloraEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ClintoniaunifloraBonap.png?raw=true" alt="map" width="350"/>
 
+#### Cornus canadensis
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Cornus_canadensisdist.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(35, 68), xlim=c(-162, -53), fill= TRUE, 
+    col="gray90")
+points(Cornus_canadensisdist.txt$decimalLongitude, Cornus_canadensisdist.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
+
 #### Cornus nuttallii
 ##### Temporal Histogram
 ```{r eval = TRUE}
@@ -481,6 +506,25 @@ points(Gaultheria_ovatifolia.txt$decimalLongitude, Gaultheria_ovatifolia.txt$dec
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/GaulovaMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/GaultheriaovatifoliaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/GaultheriaovatifoliaBonap.png?raw=true" alt="bonap" width="350"/>
+
+#### Gaultheria shallon
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Gaultheria_shallon.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(31, 58), xlim=c(-140, -113), fill= TRUE, 
+    col="gray90")
+points(Gaultheria_shallon.txt$decimalLongitude, Gaultheria_shallon.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
 
 #### Goodyera oblongifolia
 ##### Histogram
@@ -826,6 +870,25 @@ points(Pinus_ponderosadist.txt$decimalLongitude, Pinus_ponderosadist.txt$decimal
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinusponderosaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinusponderosaBonap.png?raw=true" alt="bonap" width="350"/>
 
+#### Polystichum munitum
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Polystichum_munitum.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(33, 58), xlim=c(-152, -103), fill= TRUE, 
+    col="gray90")
+points(Polystichum_munitum.txt$decimalLongitude, Polystichum_munitum.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
 #### Populus balsamifera
 ##### Temporal Histogram
 ```{r eval = TRUE}
@@ -893,6 +956,120 @@ points(Pseudotsuga_menziesiidist.txt$decimalLongitude, Pseudotsuga_menziesiidist
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PseudotsugamenziesiiEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PseudotsugamenziesiiBonap.png?raw=true" alt="bonap" width="350"/>
 
+#### Pteridium aquilinum
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Pteridium_aquilinumdist.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(25, 64), xlim=c(-139, -52), fill= TRUE, 
+    col="gray90")
+points(Pteridium_aquilinumdist.txt$decimalLongitude, Pteridium_aquilinumdist.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
+#### Rhododendron albiflorum
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Rhododendron_albiflorum.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(37, 59), xlim=c(-130, -97), fill= TRUE, 
+    col="gray90")
+points(Rhododendron_albiflorum.txt$decimalLongitude, Rhododendron_albiflorum.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
+#### Rhododendron menziesia
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Rhododendron_menziesii.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(40, 64), xlim=c(-152, -110), fill= TRUE, 
+    col="gray90")
+points(Rhododendron_menziesii.txt$decimalLongitude, Rhododendron_menziesii.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
+#### Rubus parviflorus
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Rubus_parviflorusDist.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(31, 60), xlim=c(-140, -72), fill= TRUE, 
+    col="gray90")
+points(Rubus_parviflorusDist.txt$decimalLongitude, Rubus_parviflorusDist.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
+#### Rubus pedatus
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Rubus_pedatus.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(43, 64), xlim=c(-160, -112), fill= TRUE, 
+    col="gray90")
+points(Rubus_pedatus.txt$decimalLongitude, Rubus_pedatus.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
+#### Rubus spectabilis
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Rubus_spectabilis.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(35, 65), xlim=c(-180, -61), fill= TRUE, 
+    col="gray90")
+points(Rubus_spectabilis.txt$decimalLongitude, Rubus_spectabilis.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
 #### Sorbus sitchensis
 ##### Temporal Histogram
 ```{r eval = TRUE}
@@ -915,6 +1092,25 @@ points(Sorbus_sitchensisdist.txt$decimalLongitude, Sorbus_sitchensisdist.txt$dec
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/SorbussitchensisEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/SorbussitchensisBonap.png?raw=true" alt="bonap" width="350"/>
 
+#### Spiraea betulifolia
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Spiraea_betulifolia.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(34, 70), xlim=c(-168, -70), fill= TRUE, 
+    col="gray90")
+points(Spiraea_betulifolia.txt$decimalLongitude, Spiraea_betulifolia.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
 #### Thuja plicata
 ##### Temporal Histogram
 ```{r eval = TRUE}
@@ -936,6 +1132,44 @@ points(Thuja_plicatadist.txt$decimalLongitude, Thuja_plicatadist.txt$decimalLati
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/thujMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ThujaplicataEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/ThujaplicataBonap.png?raw=true" alt="bonap" width="350"/>
+
+#### Tiarella trifoliata
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Tiarella_trifoliataDist.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(36, 62), xlim=c(-155, -110), fill= TRUE, 
+    col="gray90")
+points(Tiarella_trifoliataDist.txt$decimalLongitude, Tiarella_trifoliataDist.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+
+#### Trientalis borealis
+##### Temporal Histogram
+```{r eval = TRUE, echo=TRUE}
+ggplot(data=Trientalis_borealisdist.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![Hist]()
+##### Distribution Map
+```{r eval = TRUE, echo=TRUE}
+map(database="world", ylim=c(34, 65), xlim=c(-138, -54), fill= TRUE, 
+    col="gray90")
+points(Trientalis_borealisdist.txt$decimalLongitude, Trientalis_borealisdist.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="map" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
 
 #### Tsuga heterophylla
 ##### Temporal Histogram
