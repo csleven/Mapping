@@ -52,7 +52,7 @@ To compare coverage of the GBIF records, I also downloaded BONAP (Biota of North
 The BONAP colour key is as follows:
 
 
-<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ColourKeyBonap.png?raw=true" alt="map" width="500"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/ColourKeyBonap.png?raw=true" alt="map" width="700"/>
 
 The BC E-flora colour key is as follows:
 
@@ -210,6 +210,8 @@ points(Achillea_millefoliumdist.txt$decimalLongitude, Achillea_millefoliumdist.t
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchmillMap.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchilleamillefoliumEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/AchilleamillefoliumBonap.png?raw=true" alt="bonap" width="350"/>
+
+Larger numbers of collections in 1970s and 2010s does not seem to be due to a particular study/person/location.
 
 #### Alnus rubra
 ##### Temporal Histogram
@@ -453,6 +455,8 @@ points(Cornus_nuttallii.txt$decimalLongitude, Cornus_nuttallii.txt$decimalLatitu
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornusnuttalliEflora.png?raw=true" alt="map" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornusnuttalliiBonap.png?raw=true" alt="bonap" width="350"/>
 
+Large number of collections in 1970s does not appear to be due to particular collector/study, though 150 are from Idaho without a collector or good location details.
+
 #### Cornus sericea
 ##### Temporal Histogram
 ```{r eval = TRUE}
@@ -613,6 +617,8 @@ points(Larix_lyallii.txt$decimalLongitude, Larix_lyallii.txt$decimalLatitude, pc
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/LarilyalMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/LarixlyalliiEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/LarixlyalliiBonap.png?raw=true" alt="bonap" width="350"/>
+
+Only 188 collections in total.
 
 #### Linnaea borealis
 ##### Histogram
@@ -791,6 +797,8 @@ points(Picea_glauca.txt$decimalLongitude, Picea_glauca.txt$decimalLatitude, pch=
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PiceaglaucaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PiceaglaucaBonap.png?raw=true" alt="bonap" width="350"/>
 
+Extremely high number of specimens in 2010s is mostly due to ~1000 fossil specimens from Alaska found (or databased in) 2011.The density of points in Nova Scotia is due to a intense collecting in the 1950s by a group from Acadia University.
+
 #### Picea sitchensis
 ##### Temporal Histogram
 ```{r eval = TRUE}
@@ -834,6 +842,8 @@ points(Pinus_albicaulis.txt$decimalLongitude, Pinus_albicaulis.txt$decimalLatitu
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinualbiMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinusalbicaulisEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinusalbicaulisBonap.png?raw=true" alt="bonap" width="350"/>
+
+Higher-than-average specimens in 2010s due to NatureServe Network Species Occurrence Data literature (all BC specimens).
 
 #### Pinus contorta
 ##### Temporal Histogram
