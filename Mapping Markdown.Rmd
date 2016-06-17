@@ -411,7 +411,7 @@ ggplot(data=Cornus_canadensisdist.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![Hist]()
+![Hist](https://github.com/csleven/Mapping/blob/master/Distributions/CorncanHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(35, 68), xlim=c(-162, -53), fill= TRUE, 
@@ -419,9 +419,9 @@ map(database="world", ylim=c(35, 68), xlim=c(-162, -53), fill= TRUE,
 points(Cornus_canadensisdist.txt$decimalLongitude, Cornus_canadensisdist.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="map" width="350"/>
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CorncanMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornuscanadensisEflora.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/CornuscanadensisBonap.png?raw=true" alt="bonap" width="350"/>
 
 
 #### Cornus nuttallii
@@ -514,7 +514,7 @@ ggplot(data=Gaultheria_shallon.txt,
        aes(x = year, group = decimalLatitude, 
            fill = decimalLatitude)) + geom_histogram(binwidth = 10)
 ```
-![Hist]()
+![Hist](https://github.com/csleven/Mapping/blob/master/Distributions/GaulshalHist.png?raw=true)
 ##### Distribution Map
 ```{r eval = TRUE, echo=TRUE}
 map(database="world", ylim=c(31, 58), xlim=c(-140, -113), fill= TRUE, 
@@ -522,9 +522,9 @@ map(database="world", ylim=c(31, 58), xlim=c(-140, -113), fill= TRUE,
 points(Gaultheria_shallon.txt$decimalLongitude, Gaultheria_shallon.txt$decimalLatitude, pch=4,
        col="red", cex=0.3)
 ```
-<img src="" alt="map" width="350"/>
-<img src="" alt="bonap" width="350"/>
-<img src="" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/GaulshalMap.png?raw=true" alt="map" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/GaultheriashallonEflora.png?raw=true" alt="bonap" width="350"/>
+<img src="https://github.com/csleven/Mapping/blob/master/Distributions/GaultheriashallonBonap.png?raw=true" alt="bonap" width="350"/>
 
 #### Goodyera oblongifolia
 ##### Histogram
@@ -847,6 +847,25 @@ points(Pinus_contorta.txt$decimalLongitude, Pinus_contorta.txt$decimalLatitude, 
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinucontMap.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinuscontortaEflora.png?raw=true" alt="bonap" width="350"/>
 <img src="https://github.com/csleven/Mapping/blob/master/Distributions/PinuscontortaBonap.png?raw=true" alt="bonap" width="350"/>
+
+#### Pinus monticola
+##### Temporal Histogram
+```{r eval = TRUE}
+ggplot(data=Pinus_monticola.txt, 
+       aes(x = year, group = decimalLatitude, 
+           fill = decimalLatitude)) + geom_histogram(binwidth = 10)
+```
+![hist]()
+##### Distribution Map
+```{r eval = TRUE}
+map(database="world", ylim=c(33, 55), xlim=c(-140, -97), fill= TRUE, 
+    col="gray90")
+points(Pinus_monticola.txt$decimalLongitude, Pinus_monticola.txt$decimalLatitude, pch=4,
+       col="red", cex=0.3)
+```
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
+<img src="" alt="bonap" width="350"/>
 
 #### Pinus ponderosa
 ##### Temporal Histogram
